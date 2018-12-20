@@ -1,17 +1,42 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "fec-photo-gallery-service",
+  "description": "> Project description",
   "author": "",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "dev-start": "webpack -d --watch",
+    "server-start": "nodemon ./server/"
   },
   "dependencies": {
+    "eslint": "^5.10.0",
+    "mongoose": "^5.4.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HROneForAll/fec-photo-gallery-service.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/HROneForAll/fec-photo-gallery-service/issues"
+  },
+  "homepage": "https://github.com/HROneForAll/fec-photo-gallery-service#readme"
 }
