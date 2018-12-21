@@ -11,6 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
+        include: path.resolve(__dirname, './client/src/components'),
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',

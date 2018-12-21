@@ -11,10 +11,11 @@ app.use(morgan('short'));
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
-app.get('/photos/:Id', (req, res) => {
-  db.getRooms(req.params.id)
+app.get('/photos/:roomId', (req, res) => {
+  console.log('req.params.id: ', req.params.listingId);
+  db.getRooms(req.params.listingId)
     .then((results) => {
-      console.log('req.params.id: ', req.params.id);
+      console.log('req.params.id: ', req.params.listingId);
       console.log('GET RESULTS: ', results);
       res.end();
     })

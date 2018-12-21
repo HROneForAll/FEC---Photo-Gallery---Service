@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev-start": "webpack -d --watch",
-    "server-start": "nodemon ./server/"
+    "server-start": "nodemon ./server/",
+    "seedDB": "node ./database/index.js"
   },
   "dependencies": {
     "eslint": "^5.10.0",
@@ -20,6 +21,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.4",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
     "morgan": "^1.9.1",
