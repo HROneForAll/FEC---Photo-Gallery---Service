@@ -4,19 +4,19 @@ mongoose.connect('mongodb://localhost/roomimages', {useNewUrlParser: true}, (err
   if (err) {
     console.log('ERROR: ', err);
   } else {
-    console.log('suucessss')
+    console.log('mongo suucessss');
   }
 });
 
 var db = mongoose.connection;
 
-const room_image_schema = mongoose.Schema({
+const roomImageSchema = mongoose.Schema({
   listingId: String,
   rooms: Array,
   roomImages: Array,
 });
 
-let RoomImages = mongoose.model('RoomImages', room_image_schema);
+let RoomImages = mongoose.model('RoomImages', roomImageSchema);
 
 let rooms = [
   {name: 'bedroom_1_', numImages: 3},
@@ -41,7 +41,7 @@ let rooms = [
   {name: 'study_', numImages: 2}
 ];
 
-const baseURL = `https://s3-us-west-1.amazonaws.com/fec-room-images/images/`;
+const baseURL = 'https://s3-us-west-1.amazonaws.com/fec-room-images/images/';
 
 let seed = (id) => {
   let imageArr = [];
@@ -56,27 +56,27 @@ let seed = (id) => {
       currentRoomCount = 1;
     }
     currentRoomCount += 1;
-    imageArr.push(`https://s3-us-west-1.amazonaws.com/fec-room-images/images/${currentRoom.name}${i}.jpg`)
+    imageArr.push(`https://s3-us-west-1.amazonaws.com/fec-room-images/images/${currentRoom.name}${i}.jpg`);
   }
   console.log('ImageArray: ', imageArr);
   RoomImages.create({listingId: id, rooms: rooms, roomImages: imageArr});
 };
-seed('17652897');
+// seed('1');
 
-let getRooms = (id) => {
+let getImageUrls = (id) => {
   return new Promise ((resolve, reject) => {
     RoomImages.find({listingId: id}, (err, results) => {
       if (err) {
         reject(err);
       } else {
-        resolve(results);
+        resolve(JSON.stringify(results));
       }
-    })
-  })
-}
+    });
+  });
+};
 
 module.exports = {
-  getRooms
+  getImageUrls
 };
 
 

@@ -7,7 +7,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      listingId: '17652897',
+      listingId: '1',
       allImages: []
     }
   }
@@ -17,6 +17,8 @@ export default class App extends React.Component {
       .then((results) => {
         console.log('AXIOS SUCCESS');
         console.log('AXIOS RESULTS:   ', results);
+        let urlArray = results.data[0].roomImages;
+        this.setState({allImages: urlArray});
       })
       .catch((err) => {
         console.log('AXIOS FAILURE');
@@ -24,12 +26,11 @@ export default class App extends React.Component {
       })
   }
 
-
   render() {
     return (
       <div>
         <div className='splash'>
-          <Splash />
+            <Splash imageUrls={this.state.allImages}/>
         </div>
         <div className='room_images_list'>
           <ImageList />
