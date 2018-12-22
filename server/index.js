@@ -11,17 +11,18 @@ app.use(morgan('short'));
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
-app.get('/photos/:Id', (req, res) => {
-  db.getRooms(req.params.id)
+app.get('/photos/:listingId', (req, res) => {
+  // console.log('req.params.id: ', req.params.listingId);
+  db.getImageUrls(req.params.listingId)
     .then((results) => {
-      console.log('req.params.id: ', req.params.id);
-      console.log('GET RESULTS: ', results);
-      res.end();
+      // console.log('req.params.id: ', req.params.listingId);
+      // console.log('GET RESULTS: ', results);
+      res.status(200).send(results);
     })
     .catch((err) => {
       console.log('CAUGHT IN GET');
       console.log('GET ERROR: ', err);
-      res.end();
+      res.status(404).send(err);
     });
 });
 
