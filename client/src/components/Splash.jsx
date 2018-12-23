@@ -1,15 +1,15 @@
 import React from 'react';
+import style from '../../styles.css.js';
 
 var Splash = (props) => {
-  console.log('qweqwe: ', props.imageUrls);
-  return props.imageUrls.map(url => {
-    console.log('SingleUrl: ', url);
-    return ( 
-    <div>  
-      <img src={url}></img>
+  let splashImage = props.imageUrls[24];
+  return (
+    <div className='splash' id='splash-image'>
+      <div>
+        <img src={splashImage} style={style.splashStyle} ></img>
+      </div>
     </div>
-    )
-  })
+  )
 };
 
 export default Splash;

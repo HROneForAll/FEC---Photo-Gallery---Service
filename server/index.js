@@ -26,7 +26,7 @@ app.get('/photos/:listingId', (req, res) => {
     });
 });
 
-const PORT = 1234;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`App is listening on port: ${PORT}`);
 });
