@@ -8,7 +8,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       listingId: '1',
-      allImages: [],
+      imageUrls: [],
       rooms: []
     }
   }
@@ -18,9 +18,9 @@ export default class App extends React.Component {
       .then((results) => {
         console.log('AXIOS SUCCESS');
         console.log('AXIOS RESULTS:   ', results);
-        let allImages = results.data[0].roomImages;
+        let imageUrls = results.data[0].roomImages;
         let rooms = results.data[0].rooms;
-        this.setState({allImages, rooms});
+        this.setState({imageUrls, rooms});
       })
       .catch((err) => {
         console.log('AXIOS FAILURE');
@@ -32,10 +32,10 @@ export default class App extends React.Component {
     return (
       <div>
         <div className='splash'>
-          <Splash imageUrls={this.state.allImages}/>
+          <Splash imageUrls={this.state.imageUrls}/>
         </div>
         <div className='room_images_list'>
-          <ImageList rooms={this.state.rooms} imageUrls={this.state.allImages}/>
+          <ImageList rooms={this.state.rooms} imageUrls={this.state.imageUrls}/>
         </div>
       </div>
     )
