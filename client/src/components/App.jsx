@@ -1,17 +1,31 @@
 import React from 'react';
+import axios from 'axios';
 import ImageList from './imageList.jsx';
 import Splash from './Splash.jsx';
-import axios from 'axios';
+import PhotoModal from './modals/photoModal.jsx';
+import style from '../../styles.css';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       listingId: '1',
       imageUrls: [],
-      rooms: []
+      rooms: [],
+      show: false,
+      displayStyle: style.staticStyle
     }
   }
+
+  handleClose() {
+    this.setState({ show: false, displayStyle: style.staticStyle});
+  };
+
+  handleOpen() {
+    this.setState({ show: true, displayStyle: style.staticNoStyle });
+  };
 
   componentDidMount() {
     axios.get(`/photos/${this.state.listingId}`)
@@ -25,17 +39,32 @@ export default class App extends React.Component {
       .catch((err) => {
         console.log('AXIOS FAILURE');
         console.log('AXIOS ERROR:   ', err);
-      })
-  }
+      });
+  };
 
   render() {
     return (
       <div>
-        <div className='splash'>
-          <Splash imageUrls={this.state.imageUrls}/>
+        <div style={this.state.displayStyle}>
+          <div className='splash'>
+            <Splash 
+            imageUrls={this.state.imageUrls}/>
+          </div>
+          <div className='room_images_list'>
+            <ImageList
+            rooms={this.state.rooms} 
+            imageUrls={this.state.imageUrls}
+            />
+          </div>
         </div>
-        <div className='room_images_list'>
-          <ImageList rooms={this.state.rooms} imageUrls={this.state.imageUrls}/>
+        <div className='photos_modal'>
+          <PhotoModal 
+          show={this.state.show}
+          displayStyle={this.state.displayStyle} 
+          handleClose={this.handleClose} 
+          handleOpen={() => this.handleOpen()} 
+          rooms={this.state.rooms} 
+          imageUrls={this.state.imageUrls}/>
         </div>
       </div>
     )
