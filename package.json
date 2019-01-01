@@ -41,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/HROneForAll/fec-photo-gallery-service/issues"
   },
-  "homepage": "https://github.com/HROneForAll/fec-photo-gallery-service#readme"
+  "homepage": "https://github.com/HROneForAll/fec-photo-gallery-service#readme",
+  "eslintIgnore": ["/public/bundle.js"]
 }
