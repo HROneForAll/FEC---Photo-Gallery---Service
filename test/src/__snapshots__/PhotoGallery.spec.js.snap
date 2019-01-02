@@ -1,0 +1,1514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageList should render correctly with data 1`] = `
+<div
+  style={
+    Object {
+      "ZIndex": "-1",
+      "align": "center",
+      "position": "static",
+    }
+  }
+>
+  <div
+    className="tour-title"
+  >
+    <div
+      style={
+        Object {
+          "ZIndex": "-1",
+          "color": "grey",
+          "font": "400 32px system-ui",
+          "fontSize": "30px",
+          "marginBottom": "2%",
+          "marginLeft": "20.71%",
+          "position": "static",
+        }
+      }
+    >
+      <h1>
+        Tour this house
+      </h1>
+    </div>
+  </div>
+  <div
+    className="tour_image_table"
+    style={
+      Object {
+        "ZIndex": "-1",
+        "display": "flex",
+        "font": "400 14px system-ui",
+        "marginLeft": "20.71%",
+        "position": "static",
+      }
+    }
+  >
+    <ImageListCol
+      allUrls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+        ]
+      }
+      colIndex={0}
+      key="0"
+      roomRows={
+        Array [
+          Array [
+            Object {
+              "name": "bedroom_1_",
+              "numImages": 3,
+            },
+            Object {
+              "name": "bedroom_2_",
+              "numImages": 4,
+            },
+          ],
+        ]
+      }
+      rooms={
+        Array [
+          Object {
+            "name": "bedroom_1_",
+            "numImages": 3,
+          },
+          Object {
+            "name": "bedroom_2_",
+            "numImages": 4,
+          },
+        ]
+      }
+      urls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          undefined,
+        ]
+      }
+    />
+    <ImageListCol
+      allUrls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+        ]
+      }
+      colIndex={1}
+      key="1"
+      roomRows={
+        Array [
+          Array [
+            Object {
+              "name": "bedroom_1_",
+              "numImages": 3,
+            },
+            Object {
+              "name": "bedroom_2_",
+              "numImages": 4,
+            },
+          ],
+        ]
+      }
+      rooms={
+        Array [
+          Object {
+            "name": "bedroom_1_",
+            "numImages": 3,
+          },
+          Object {
+            "name": "bedroom_2_",
+            "numImages": 4,
+          },
+        ]
+      }
+      urls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          undefined,
+        ]
+      }
+    />
+    <ImageListCol
+      allUrls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+        ]
+      }
+      colIndex={2}
+      key="2"
+      roomRows={
+        Array [
+          Array [
+            Object {
+              "name": "bedroom_1_",
+              "numImages": 3,
+            },
+            Object {
+              "name": "bedroom_2_",
+              "numImages": 4,
+            },
+          ],
+        ]
+      }
+      rooms={
+        Array [
+          Object {
+            "name": "bedroom_1_",
+            "numImages": 3,
+          },
+          Object {
+            "name": "bedroom_2_",
+            "numImages": 4,
+          },
+        ]
+      }
+      urls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          undefined,
+        ]
+      }
+    />
+    <ImageListCol
+      allUrls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+        ]
+      }
+      colIndex={3}
+      key="3"
+      roomRows={
+        Array [
+          Array [
+            Object {
+              "name": "bedroom_1_",
+              "numImages": 3,
+            },
+            Object {
+              "name": "bedroom_2_",
+              "numImages": 4,
+            },
+          ],
+        ]
+      }
+      rooms={
+        Array [
+          Object {
+            "name": "bedroom_1_",
+            "numImages": 3,
+          },
+          Object {
+            "name": "bedroom_2_",
+            "numImages": 4,
+          },
+        ]
+      }
+      urls={
+        Array [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          undefined,
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`ImageList should render correctly without data 1`] = `
+<div
+  style={
+    Object {
+      "ZIndex": "-1",
+      "align": "center",
+      "position": "static",
+    }
+  }
+>
+  <div
+    className="tour-title"
+  >
+    <div
+      style={
+        Object {
+          "ZIndex": "-1",
+          "color": "grey",
+          "font": "400 32px system-ui",
+          "fontSize": "30px",
+          "marginBottom": "2%",
+          "marginLeft": "20.71%",
+          "position": "static",
+        }
+      }
+    >
+      <h1>
+        Tour this house
+      </h1>
+    </div>
+  </div>
+  <div
+    className="tour_image_table"
+    style={
+      Object {
+        "ZIndex": "-1",
+        "display": "flex",
+        "font": "400 14px system-ui",
+        "marginLeft": "20.71%",
+        "position": "static",
+      }
+    }
+  >
+    <ImageListCol
+      allUrls={Array []}
+      colIndex={0}
+      key="0"
+      roomRows={Array []}
+      rooms={Array []}
+      urls={Array []}
+    />
+    <ImageListCol
+      allUrls={Array []}
+      colIndex={1}
+      key="1"
+      roomRows={Array []}
+      rooms={Array []}
+      urls={Array []}
+    />
+    <ImageListCol
+      allUrls={Array []}
+      colIndex={2}
+      key="2"
+      roomRows={Array []}
+      rooms={Array []}
+      urls={Array []}
+    />
+    <ImageListCol
+      allUrls={Array []}
+      colIndex={3}
+      key="3"
+      roomRows={Array []}
+      rooms={Array []}
+      urls={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`ImageListCol should render correctly with data 1`] = `
+<div
+  className="tour_image_col"
+>
+  <ImageListEntry
+    key="00"
+    room={
+      Object {
+        "name": "bedroom_1_",
+        "numImages": 3,
+      }
+    }
+    url="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
+  />
+  <ImageListEntry
+    key="01"
+    room={
+      Object {
+        "name": "bedroom_3_",
+        "numImages": 3,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`ImageListCol should render correctly without data 1`] = `
+<div
+  className="tour_image_col"
+/>
+`;
+
+exports[`ImageListEntry should render correctly with data 1`] = `
+<div
+  className="tour-entry"
+>
+  <div
+    className="tour_image"
+  >
+    <img
+      style={
+        Object {
+          "ZIndex": "-1",
+          "height": "164px",
+          "marginLeft": "5px",
+          "marginRight": "5px",
+          "position": "static",
+          "width": "246px",
+        }
+      }
+    />
+    <div
+      className="room-label"
+      style={
+        Object {
+          "ZIndex": "-1",
+          "marginBottom": "10%",
+          "marginLeft": "4px",
+          "position": "static",
+        }
+      }
+    >
+      <span>
+        Bedroom 1
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PhotoGallery should render correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <div
+      className="splash"
+    >
+      <Splash
+        imageUrls={Array []}
+      />
+    </div>
+    <div
+      className="room_images_list"
+    >
+      <ImageList
+        imageUrls={Array []}
+        rooms={Array []}
+      />
+    </div>
+  </div>
+  <div
+    className="photos_modal"
+  >
+    <PhotoModal
+      displayStyle={
+        Object {
+          "display": "block",
+        }
+      }
+      handleClose={[Function]}
+      handleOpen={[Function]}
+      imageUrls={Array []}
+      rooms={Array []}
+      show={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`PhotoModal should render correctly with data 1`] = `
+<div
+  className="modal-container"
+>
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsStyle="default"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "border": "2px solid lightGrey",
+        "borderRadius": "4px",
+        "float": "right",
+        "font": "400 14px system-ui",
+        "height": "40px",
+        "left": "0",
+        "position": "static",
+        "top": "0",
+        "width": "10%",
+      }
+    }
+  >
+    TOUR THIS HOME
+  </Button>
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsSize="large"
+    bsStyle="primary"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "none",
+        "color": "#a61d55",
+        "font": "400 18px system-ui",
+        "marginLeft": "20.71%",
+        "position": "static",
+      }
+    }
+  >
+    Explore all 
+    3
+     photos
+  </Button>
+  <Modal
+    animation={true}
+    aria-labelledby="contained-modal-title"
+    autoFocus={true}
+    backdrop={true}
+    bsClass="modal"
+    container={
+      PhotoModal {
+        "context": Object {},
+        "handleTourOpen": [Function],
+        "handleViewOpen": [Function],
+        "props": Object {
+          "displayStyle": Object {
+            "display": "none",
+          },
+          "handleClose": [Function],
+          "handleOpen": [Function],
+          "imageUrls": Array [
+            "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+            "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+            "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+          ],
+          "rooms": Array [
+            Object {
+              "name": "bedroom_1_",
+              "numImages": 3,
+            },
+            Object {
+              "name": "bedroom_2_",
+              "numImages": 4,
+            },
+          ],
+          "show": true,
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "buttonContent": "",
+          "buttonStyle": Object {
+            "border": "none",
+            "color": "#a61d55",
+            "font": "400 18px system-ui",
+            "marginLeft": "20.71%",
+            "position": "static",
+          },
+          "displayStyle": Object {
+            "display": "none",
+          },
+          "displayTourStyle": Object {
+            "display": "none",
+          },
+          "displayViewStyle": Object {
+            "display": "none",
+          },
+          "show": false,
+          "tourRoomsPage": false,
+          "viewAllPage": false,
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <PhotoModal
+              displayStyle={
+                Object {
+                  "display": "none",
+                }
+              }
+              handleClose={[Function]}
+              handleOpen={[Function]}
+              imageUrls={
+                Array [
+                  "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+                  "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+                  "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+                ]
+              }
+              rooms={
+                Array [
+                  Object {
+                    "name": "bedroom_1_",
+                    "numImages": 3,
+                  },
+                  Object {
+                    "name": "bedroom_2_",
+                    "numImages": 4,
+                  },
+                ]
+              }
+              show={true}
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": null,
+            "_rendered": <div
+              className="modal-container"
+            >
+              <Button
+                active={false}
+                block={false}
+                bsClass="btn"
+                bsStyle="default"
+                disabled={false}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "white",
+                    "border": "2px solid lightGrey",
+                    "borderRadius": "4px",
+                    "float": "right",
+                    "font": "400 14px system-ui",
+                    "height": "40px",
+                    "left": "0",
+                    "position": "static",
+                    "top": "0",
+                    "width": "10%",
+                  }
+                }
+              >
+                TOUR THIS HOME
+              </Button>
+              <Button
+                active={false}
+                block={false}
+                bsClass="btn"
+                bsSize="large"
+                bsStyle="primary"
+                disabled={false}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "none",
+                    "color": "#a61d55",
+                    "font": "400 18px system-ui",
+                    "marginLeft": "20.71%",
+                    "position": "static",
+                  }
+                }
+              >
+                Explore all 
+                3
+                 photos
+              </Button>
+              <Modal
+                animation={true}
+                aria-labelledby="contained-modal-title"
+                autoFocus={true}
+                backdrop={true}
+                bsClass="modal"
+                container={[Circular]}
+                dialogComponentClass={[Function]}
+                enforceFocus={true}
+                keyboard={true}
+                manager={
+                  ModalManager {
+                    "add": [Function],
+                    "containers": Array [],
+                    "data": Array [],
+                    "handleContainerOverflow": true,
+                    "hideSiblingNodes": true,
+                    "isTopModal": [Function],
+                    "modals": Array [],
+                    "remove": [Function],
+                  }
+                }
+                onHide={[Function]}
+                renderBackdrop={[Function]}
+                restoreFocus={true}
+                show={false}
+                style={
+                  Object {
+                    "ZIndex": "1",
+                    "backgroundColor": "white",
+                    "borderColor": "white",
+                    "display": "grid",
+                    "float": "left",
+                    "font": "400 16px system-ui",
+                    "height": "100%",
+                    "left": "0",
+                    "maxWidth": "110%",
+                    "minHeight": "100%",
+                    "overflow": "scroll",
+                    "paddingLeft": "20.71%",
+                    "paddingTop": "7%",
+                    "position": "static",
+                    "top": "0",
+                    "width": "110%",
+                  }
+                }
+              >
+                <ModalHeader
+                  bsClass="modal-header"
+                  closeButton={false}
+                  closeLabel="Close"
+                  style={
+                    Object {
+                      "ZIndex": "2",
+                      "backgroundColor": "white",
+                      "borderBottom": "1px solid lightGrey",
+                      "height": "70px",
+                      "left": "0",
+                      "marginBottom": "10%",
+                      "position": "fixed",
+                      "top": "0",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <ModalTitle
+                    bsClass="modal-title"
+                    componentClass="h4"
+                    id="contained-modal-title"
+                  >
+                    <div>
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="default"
+                        disabled={false}
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "border": "none",
+                            "color": "grey",
+                            "display": "flex",
+                            "float": "left",
+                            "fontSize": "36px",
+                            "height": "40px",
+                            "left": "0",
+                            "marginLeft": "2%",
+                            "marginTop": "15px",
+                            "position": "fixed",
+                            "top": "0",
+                            "width": "40px",
+                          }
+                        }
+                      >
+                        <i
+                          class="fas fa-arrow-circle-left"
+                        />
+                      </Button>
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="default"
+                        disabled={false}
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "border": "2px solid lightGrey",
+                            "borderRadius": "4px",
+                            "display": "inline-block",
+                            "float": "left",
+                            "font": "400 14px system-ui",
+                            "height": "40px",
+                            "left": "0",
+                            "marginLeft": "20.90%",
+                            "marginTop": "15px",
+                            "position": "fixed",
+                            "top": "0",
+                            "width": "10%",
+                          }
+                        }
+                      >
+                        
+                      </Button>
+                    </div>
+                  </ModalTitle>
+                </ModalHeader>
+                <ModalBody
+                  bsClass="modal-body"
+                  componentClass="div"
+                >
+                  <div
+                    className="view-rooms-modal"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    <ViewRoomsModal
+                      imageUrls={
+                        Array [
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+                        ]
+                      }
+                      rooms={
+                        Array [
+                          Object {
+                            "name": "bedroom_1_",
+                            "numImages": 3,
+                          },
+                          Object {
+                            "name": "bedroom_2_",
+                            "numImages": 4,
+                          },
+                        ]
+                      }
+                    />
+                  </div>
+                  <div
+                    className="tour-rooms-modal"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    <TourRoomsModal
+                      imageUrls={
+                        Array [
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+                          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+                        ]
+                      }
+                      rooms={
+                        Array [
+                          Object {
+                            "name": "bedroom_1_",
+                            "numImages": 3,
+                          },
+                          Object {
+                            "name": "bedroom_2_",
+                            "numImages": 4,
+                          },
+                        ]
+                      }
+                    />
+                  </div>
+                </ModalBody>
+              </Modal>
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    dialogComponentClass={[Function]}
+    enforceFocus={true}
+    keyboard={true}
+    manager={
+      ModalManager {
+        "add": [Function],
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "isTopModal": [Function],
+        "modals": Array [],
+        "remove": [Function],
+      }
+    }
+    onHide={[Function]}
+    renderBackdrop={[Function]}
+    restoreFocus={true}
+    show={false}
+    style={
+      Object {
+        "ZIndex": "1",
+        "backgroundColor": "white",
+        "borderColor": "white",
+        "display": "grid",
+        "float": "left",
+        "font": "400 16px system-ui",
+        "height": "100%",
+        "left": "0",
+        "maxWidth": "110%",
+        "minHeight": "100%",
+        "overflow": "scroll",
+        "paddingLeft": "20.71%",
+        "paddingTop": "7%",
+        "position": "static",
+        "top": "0",
+        "width": "110%",
+      }
+    }
+  >
+    <ModalHeader
+      bsClass="modal-header"
+      closeButton={false}
+      closeLabel="Close"
+      style={
+        Object {
+          "ZIndex": "2",
+          "backgroundColor": "white",
+          "borderBottom": "1px solid lightGrey",
+          "height": "70px",
+          "left": "0",
+          "marginBottom": "10%",
+          "position": "fixed",
+          "top": "0",
+          "width": "100%",
+        }
+      }
+    >
+      <ModalTitle
+        bsClass="modal-title"
+        componentClass="h4"
+        id="contained-modal-title"
+      >
+        <div>
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            disabled={false}
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "grey",
+                "display": "flex",
+                "float": "left",
+                "fontSize": "36px",
+                "height": "40px",
+                "left": "0",
+                "marginLeft": "2%",
+                "marginTop": "15px",
+                "position": "fixed",
+                "top": "0",
+                "width": "40px",
+              }
+            }
+          >
+            <i
+              class="fas fa-arrow-circle-left"
+            />
+          </Button>
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            disabled={false}
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "2px solid lightGrey",
+                "borderRadius": "4px",
+                "display": "inline-block",
+                "float": "left",
+                "font": "400 14px system-ui",
+                "height": "40px",
+                "left": "0",
+                "marginLeft": "20.90%",
+                "marginTop": "15px",
+                "position": "fixed",
+                "top": "0",
+                "width": "10%",
+              }
+            }
+          />
+        </div>
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody
+      bsClass="modal-body"
+      componentClass="div"
+    >
+      <div
+        className="view-rooms-modal"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <ViewRoomsModal
+          imageUrls={
+            Array [
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+            ]
+          }
+          rooms={
+            Array [
+              Object {
+                "name": "bedroom_1_",
+                "numImages": 3,
+              },
+              Object {
+                "name": "bedroom_2_",
+                "numImages": 4,
+              },
+            ]
+          }
+        />
+      </div>
+      <div
+        className="tour-rooms-modal"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <TourRoomsModal
+          imageUrls={
+            Array [
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+              "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg",
+            ]
+          }
+          rooms={
+            Array [
+              Object {
+                "name": "bedroom_1_",
+                "numImages": 3,
+              },
+              Object {
+                "name": "bedroom_2_",
+                "numImages": 4,
+              },
+            ]
+          }
+        />
+      </div>
+    </ModalBody>
+  </Modal>
+</div>
+`;
+
+exports[`Splash should render correctly with data 1`] = `
+<div
+  className="splash"
+  id="splash-image"
+>
+  <div>
+    <img
+      src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
+      style={
+        Object {
+          "ZIndex": "-1",
+          "display": "inline-block",
+          "float": "right",
+          "height": "686px",
+          "marginBottom": "10%",
+          "marginLeft": "500px",
+          "marginRight": "1%",
+          "marginTop": "80px",
+          "position": "relative",
+          "width": "1082.66px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`TourRoomsModal should render correctly in "debug" mode 1`] = `
+Array [
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={true}
+    style={
+      Object {
+        "ZIndex": "1",
+        "backgroundColor": "white",
+        "display": "flex",
+        "flex": "1 1 auto",
+        "flexDirection": "columns",
+        "flexFlow": "column wrap",
+        "float": "left",
+        "font": "400 36px system-ui",
+        "height": "244px",
+        "left": "0",
+        "marginRight": "40px",
+        "marginTop": "40px",
+        "maxHeight": "500px",
+        "maxWidth": "60%",
+        "overflow": "auto",
+        "position": "static",
+        "top": "0",
+        "width": "40%",
+      }
+    }
+  >
+    <Label
+      bsClass="label"
+      bsStyle="default"
+    >
+      Bedroom 1
+    </Label>
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+    </Row>
+  </Grid>,
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={true}
+    style={
+      Object {
+        "ZIndex": "1",
+        "backgroundColor": "white",
+        "display": "flex",
+        "flex": "1 1 auto",
+        "flexDirection": "columns",
+        "flexFlow": "column wrap",
+        "float": "left",
+        "font": "400 36px system-ui",
+        "height": "244px",
+        "left": "0",
+        "marginRight": "40px",
+        "marginTop": "40px",
+        "maxHeight": "500px",
+        "maxWidth": "60%",
+        "overflow": "auto",
+        "position": "static",
+        "top": "0",
+        "width": "40%",
+      }
+    }
+  >
+    <Label
+      bsClass="label"
+      bsStyle="default"
+    >
+      Bedroom 2
+    </Label>
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "202px",
+                "marginBottom": "20px",
+                "marginRight": "5px",
+                "marginTop": "20px",
+                "position": "static",
+                "width": "202px",
+              }
+            }
+          />
+        </div>
+      </Row>
+    </Row>
+  </Grid>,
+]
+`;
+
+exports[`ViewRoomsModal should render correctly in "debug" mode 1`] = `
+Array [
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+    style={
+      Object {
+        "ZIndex": "1",
+        "backgroundColor": "white",
+        "display": "flex",
+        "flex": "1 1 auto",
+        "flexDirection": "column",
+        "float": "left",
+        "height": "190px",
+        "left": "0",
+        "maxWidth": "60%",
+        "position": "static",
+        "top": "0",
+        "width": "40%",
+      }
+    }
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+    </Row>
+    <Label
+      bsClass="label"
+      bsStyle="default"
+    >
+      Bedroom 1
+    </Label>
+  </Grid>,
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+    style={
+      Object {
+        "ZIndex": "1",
+        "backgroundColor": "white",
+        "display": "flex",
+        "flex": "1 1 auto",
+        "flexDirection": "column",
+        "float": "left",
+        "height": "190px",
+        "left": "0",
+        "maxWidth": "60%",
+        "position": "static",
+        "top": "0",
+        "width": "40%",
+      }
+    }
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={3}
+        xs={6}
+      >
+        <div>
+          <img
+            style={
+              Object {
+                "ZIndex": "1",
+                "borderRadius": "5px",
+                "float": "left",
+                "height": "101px",
+                "marginBottom": "10px",
+                "marginRight": "5px",
+                "position": "static",
+                "width": "101px",
+              }
+            }
+          />
+        </div>
+      </Col>
+    </Row>
+    <Label
+      bsClass="label"
+      bsStyle="default"
+    >
+      Bedroom 2
+    </Label>
+  </Grid>,
+]
+`;

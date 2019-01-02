@@ -13,7 +13,7 @@ var db = mongoose.connection;
 const roomImageSchema = mongoose.Schema({
   listingId: String,
   rooms: Array,
-  roomImages: Array,
+  roomImages: Array
 });
 
 let RoomImages = mongoose.model('RoomImages', roomImageSchema);
