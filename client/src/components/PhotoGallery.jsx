@@ -61,7 +61,7 @@ export default class PhotoGallery extends React.Component {
           <PhotoModal 
           show={this.state.show}
           displayStyle={this.state.displayStyle} 
-          handleClose={this.handleClose} 
+          handleClose={() => this.handleClose()} 
           handleOpen={() => this.handleOpen()} 
           rooms={this.state.rooms} 
           imageUrls={this.state.imageUrls}/>

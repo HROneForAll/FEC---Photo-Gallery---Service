@@ -13,33 +13,88 @@ import ViewRoomsModal from '../../client/src/components/modals/viewRoomsModal.js
 
 
 describe('PhotoGallery', () => {
-  it('should render correctly in "debug" mode', () => {
+  it('should render correctly', () => {
     const component = shallow(<PhotoGallery />);
   
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<PhotoGallery />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('ImageList', () => {
-  it('should render correctly in "debug" mode', () => {
-    const component = shallow(<ImageList debug />);
-  
+  it('should render correctly with data', () => {
+    const component = shallow(<ImageList 
+      rooms={
+        [
+          {name: "bedroom_1_", numImages: 3},
+          {name: "bedroom_2_", numImages: 4}
+        ]
+      }
+
+      imageUrls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+    />);
     expect(component).toMatchSnapshot();
   });
 
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
+  it('should render correctly without data', () => {
+    const component = shallow(<ImageList 
+      rooms={[]}
+      imageUrls={[]}
+    />);
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it('should render four ImageListCol components', () => {
+    const component = shallow(<ImageList 
+      rooms={[]}
+      imageUrls={[]}
+    />);
+
+    expect(component.find(ImageListCol)).toHaveLength(4);
+  });
+
 });
 
 describe('ImageListCol', () => {
-  it('should render correctly in "debug" mode', () => {
-    const component = shallow(<ImageListCol debug />);
-  
+  it('should render correctly with data', () => {
+    const component = shallow(<ImageListCol 
+      roomRows={
+        [
+          [
+            {name: "bedroom_1_", numImages: 3},
+            {name: "bedroom_2_", numImages: 4}
+          ],
+          [
+            {name: "bedroom_3_", numImages: 3},
+            {name: "bedroom_4_", numImages: 4}
+          ]
+        ]
+      }
+
+      urls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+      colIndex='0'
+    />);
+    expect(component).toMatchSnapshot();
+  });
+
+  it('should render correctly without data', () => {
+    const component = shallow(<ImageListCol 
+      roomRows={[]}
+      urls={[]}
+    />);
+
     expect(component).toMatchSnapshot();
   });
 
@@ -49,11 +104,17 @@ describe('ImageListCol', () => {
 });
 
 describe('ImageListEntry', () => {
-  it('should render correctly in "debug" mode', () => {
-    const component = shallow(<ImageListEntry debug />);
+  it('should render correctly with data', () => {
+    const component = shallow(<ImageListEntry room={{name: "bedroom_1_", numImages: 3}}/>);
   
     expect(component).toMatchSnapshot();
   });
+
+  // it('should render correctly without data', () => {
+  //   const component = shallow(<ImageListEntry room={{}}/>);
+  
+  //   expect(component).toMatchSnapshot();
+  // });
 
   // it('should render without throwing an error', function() {
   //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
@@ -61,37 +122,69 @@ describe('ImageListEntry', () => {
 });
 
 describe('Splash', () => {
-  it('should render correctly in "debug" mode', () => {
-    const component = shallow(<Splash debug />);
+  it('should render correctly with data', () => {
+    const component = shallow(<Splash 
+      imageUrls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+    />);
   
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('PhotoModal', () => {
-  it('should render correctly in "debug" mode', () => {
-    const component = shallow(<PhotoModal debug />);
+  it('should render correctly with data', () => {
+    let handleOpen = () => { console.log('handleOpen') };
+    let handleClose = () => { console.log('handleClose') };
+
+    const component = shallow(<PhotoModal 
+      show={false}
+      handleOpen={handleOpen}
+      handleClose={handleClose}
+      displayStyle={{display: 'none'}}
+      rooms={
+        [
+          {name: "bedroom_1_", numImages: 3},
+          {name: "bedroom_2_", numImages: 4}
+        ]
+      }
+
+      imageUrls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+    />);
   
     expect(component).toMatchSnapshot();
   });
-
-
-  // it('should render without throwing an error', function() {
-  //   const component = shallow(<PhotoGallery debug />);
-  //   expect(component.find('.fade in modal')).to.have.lengthOf(0);
-  //   expect(component.find(PhotoModal)).to.have.lengthOf(1);
-  //   expect(component.find(PhotoModal).shallow().find('.modal-container')).to.have.lengthOf(1);
-  //   // expect(shallow(<Photo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('TourRoomsModal', () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<TourRoomsModal debug />);
+    const component = shallow(<TourRoomsModal 
+      rooms={
+        [
+          {name: "bedroom_1_", numImages: 3},
+          {name: "bedroom_2_", numImages: 4}
+        ]
+      }
+
+      imageUrls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+    />);
   
     expect(component).toMatchSnapshot();
   });
@@ -103,7 +196,22 @@ describe('TourRoomsModal', () => {
 
 describe('ViewRoomsModal', () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<ViewRoomsModal debug />);
+    const component = shallow(<ViewRoomsModal 
+      rooms={
+        [
+          {name: "bedroom_1_", numImages: 3},
+          {name: "bedroom_2_", numImages: 4}
+        ]
+      }
+
+      imageUrls={
+        [
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
+          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+        ]
+      }
+    />);
   
     expect(component).toMatchSnapshot();
   });

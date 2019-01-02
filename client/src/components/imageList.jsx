@@ -9,6 +9,7 @@ var ImageList = (props) => {
   let cols = [];
   let urls = [];
   let allUrls = props.imageUrls;
+  console.log(allUrls);
   let rooms = props.rooms;
   let imgCount = 0;
 
