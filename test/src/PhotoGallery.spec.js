@@ -10,8 +10,6 @@ import TourRoomsModal from '../../client/src/components/modals/tourRoomsModal.js
 import ViewRoomsModal from '../../client/src/components/modals/viewRoomsModal.jsx';
 
 
-
-
 describe('PhotoGallery', () => {
   it('should render correctly', () => {
     const component = shallow(<PhotoGallery />);
@@ -25,16 +23,16 @@ describe('ImageList', () => {
     const component = shallow(<ImageList 
       rooms={
         [
-          {name: "bedroom_1_", numImages: 3},
-          {name: "bedroom_2_", numImages: 4}
+          {name: 'bedroom_1_', numImages: 3},
+          {name: 'bedroom_2_', numImages: 4}
         ]
       }
 
       imageUrls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
     />);
@@ -67,21 +65,21 @@ describe('ImageListCol', () => {
       roomRows={
         [
           [
-            {name: "bedroom_1_", numImages: 3},
-            {name: "bedroom_2_", numImages: 4}
+            {name: 'bedroom_1_', numImages: 3},
+            {name: 'bedroom_2_', numImages: 4}
           ],
           [
-            {name: "bedroom_3_", numImages: 3},
-            {name: "bedroom_4_", numImages: 4}
+            {name: 'bedroom_3_', numImages: 3},
+            {name: 'bedroom_4_', numImages: 4}
           ]
         ]
       }
 
       urls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
       colIndex='0'
@@ -97,28 +95,14 @@ describe('ImageListCol', () => {
 
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('ImageListEntry', () => {
   it('should render correctly with data', () => {
-    const component = shallow(<ImageListEntry room={{name: "bedroom_1_", numImages: 3}}/>);
+    const component = shallow(<ImageListEntry room={{name: 'bedroom_1_', numImages: 3}}/>);
   
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render correctly without data', () => {
-  //   const component = shallow(<ImageListEntry room={{}}/>);
-  
-  //   expect(component).toMatchSnapshot();
-  // });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('Splash', () => {
@@ -126,9 +110,9 @@ describe('Splash', () => {
     const component = shallow(<Splash 
       imageUrls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
     />);
@@ -139,8 +123,8 @@ describe('Splash', () => {
 
 describe('PhotoModal', () => {
   it('should render correctly with data', () => {
-    let handleOpen = () => { console.log('handleOpen') };
-    let handleClose = () => { console.log('handleClose') };
+    let handleOpen = () => { console.log('handleOpen'); };
+    let handleClose = () => { console.log('handleClose'); };
 
     const component = shallow(<PhotoModal 
       show={false}
@@ -149,16 +133,16 @@ describe('PhotoModal', () => {
       displayStyle={{display: 'none'}}
       rooms={
         [
-          {name: "bedroom_1_", numImages: 3},
-          {name: "bedroom_2_", numImages: 4}
+          {name: 'bedroom_1_', numImages: 3},
+          {name: 'bedroom_2_', numImages: 4}
         ]
       }
 
       imageUrls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
     />);
@@ -168,55 +152,47 @@ describe('PhotoModal', () => {
 });
 
 describe('TourRoomsModal', () => {
-  it('should render correctly in "debug" mode', () => {
+  it('should render correctly with data', () => {
     const component = shallow(<TourRoomsModal 
       rooms={
         [
-          {name: "bedroom_1_", numImages: 3},
-          {name: "bedroom_2_", numImages: 4}
+          {name: 'bedroom_1_', numImages: 3},
+          {name: 'bedroom_2_', numImages: 4}
         ]
       }
 
       imageUrls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
     />);
   
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<PhotoModal />).contains(<div className="">Bar</div>)).toBe(true);
-  // });
 });
 
 describe('ViewRoomsModal', () => {
-  it('should render correctly in "debug" mode', () => {
+  it('should render correctly with data', () => {
     const component = shallow(<ViewRoomsModal 
       rooms={
         [
-          {name: "bedroom_1_", numImages: 3},
-          {name: "bedroom_2_", numImages: 4}
+          {name: 'bedroom_1_', numImages: 3},
+          {name: 'bedroom_2_', numImages: 4}
         ]
       }
 
       imageUrls={
         [
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg",
-          "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg',
+          'https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg'
         ]
       }
     />);
   
     expect(component).toMatchSnapshot();
   });
-
-  // it('should render without throwing an error', function() {
-  //   expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  // });
 });

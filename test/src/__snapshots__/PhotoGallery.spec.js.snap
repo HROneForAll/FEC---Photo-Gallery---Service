@@ -494,7 +494,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
               "numImages": 4,
             },
           ],
-          "show": true,
+          "show": false,
         },
         "refs": Object {},
         "setState": [Function],
@@ -551,7 +551,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   },
                 ]
               }
-              show={true}
+              show={false}
             />,
             "_forcedUpdate": false,
             "_instance": [Circular],
@@ -1024,7 +1024,7 @@ exports[`Splash should render correctly with data 1`] = `
 </div>
 `;
 
-exports[`TourRoomsModal should render correctly in "debug" mode 1`] = `
+exports[`TourRoomsModal should render correctly with data 1`] = `
 Array [
   <Grid
     bsClass="container"
@@ -1278,7 +1278,7 @@ Array [
 ]
 `;
 
-exports[`ViewRoomsModal should render correctly in "debug" mode 1`] = `
+exports[`ViewRoomsModal should render correctly with data 1`] = `
 Array [
   <Grid
     bsClass="container"

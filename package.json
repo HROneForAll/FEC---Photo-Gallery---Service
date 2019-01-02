@@ -53,7 +53,8 @@
   },
   "homepage": "https://github.com/HROneForAll/fec-photo-gallery-service#readme",
   "eslintIgnore": [
-    "/public/bundle.js"
+    "/public/bundle.js",
+    "/coverage"
   ],
   "jest": {
     "verbose": true,
