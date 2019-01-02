@@ -1,9 +1,8 @@
 import React from 'react';
 import { Modal,Button } from 'react-bootstrap';
 import style from '../../../styles.css';
-import ViewRoomsModal from './viewRooms.jsx';
-import { relative } from 'path';
-import TourRoomsModal from './tourRooms.jsx';
+import ViewRoomsModal from './viewRoomsModal.jsx';
+import TourRoomsModal from './tourRoomsModal.jsx';
 
 
 export default class PhotoModal extends React.Component {

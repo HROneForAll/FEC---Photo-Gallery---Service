@@ -30,8 +30,8 @@ var TourRoomsModal = (props) => {
 
 
     return (
-      <Grid style={style.tourRoomsModalContentStyle}>
-        <Label>{roomName}</Label>
+      <Grid style={style.tourRoomsModalContentStyle} fluid>
+        <Label >{roomName}</Label>
         <Row>
           {cols}
         </Row>

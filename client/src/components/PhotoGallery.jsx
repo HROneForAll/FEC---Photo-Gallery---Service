@@ -2,10 +2,10 @@ import React from 'react';
 import axios from 'axios';
 import ImageList from './imageList.jsx';
 import Splash from './Splash.jsx';
-import PhotoModal from './modals/photoModal.jsx';
+import PhotoModal from './modals/PhotoModal.jsx';
 import style from '../../styles.css';
 
-export default class App extends React.Component {
+export default class PhotoGallery extends React.Component {
   constructor(props) {
     super(props);
     this.handleOpen = this.handleOpen.bind(this);

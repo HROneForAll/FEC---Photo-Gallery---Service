@@ -24,7 +24,7 @@ const splashStyle = {
   'height': '686px',
   'position': 'relative',
   'float': 'right',
-  'marginRight': '5%',
+  'marginRight': '1%',
   'marginTop': '80px',
   'marginBottom': '10%',
   'marginLeft': '500px',
@@ -37,6 +37,8 @@ const titleStyle = {
   'marginLeft': '20.71%',
   'ZIndex': '-1',
   'marginBottom': '2%',
+  'font': '400 32px system-ui',
+  'color': 'grey'
 };
 
 const listTableStyle = {
@@ -167,7 +169,7 @@ const tourRoomsModalStyle = {
 
 const tourRoomsModalContentStyle = {
   'display': 'flex',
-  // 'flex': '1 1 auto',
+  'flex': '1 1 auto',
   'flexDirection': 'columns',
   // 'flexWrap': 'wrap',
   'overflow': 'auto',
@@ -251,7 +253,7 @@ const backButtonStyle = {
 };
 
 export default {
-  SplashStyle,
+  splashStyle,
   listTableStyle,
   listImageStyle,
   titleStyle,

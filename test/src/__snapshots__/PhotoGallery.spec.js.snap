@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoGallery should render correctly in "debug" mode 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <div
+      className="splash"
+    >
+      <Splash
+        imageUrls={Array []}
+      />
+    </div>
+    <div
+      className="room_images_list"
+    >
+      <ImageList
+        imageUrls={Array []}
+        rooms={Array []}
+      />
+    </div>
+  </div>
+  <div
+    className="photos_modal"
+  >
+    <PhotoModal
+      displayStyle={
+        Object {
+          "display": "block",
+        }
+      }
+      handleClose={[Function]}
+      handleOpen={[Function]}
+      imageUrls={Array []}
+      rooms={Array []}
+      show={false}
+    />
+  </div>
+</div>
+`;

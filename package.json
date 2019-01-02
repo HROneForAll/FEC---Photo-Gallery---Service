@@ -9,9 +9,13 @@
   "scripts": {
     "dev-start": "webpack -d --watch",
     "server-start": "nodemon ./server/",
-    "seedDB": "node ./database/index.js"
+    "seedDB": "node ./database/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
   },
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
     "eslint": "^5.10.0",
     "mongoose": "^5.4.0",
     "react": "^16.7.0",
@@ -23,8 +27,14 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "jest": "^23.6.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.9",
     "webpack": "^4.28.0",
@@ -42,5 +52,14 @@
     "url": "https://github.com/HROneForAll/fec-photo-gallery-service/issues"
   },
   "homepage": "https://github.com/HROneForAll/fec-photo-gallery-service#readme",
-  "eslintIgnore": ["/public/bundle.js"]
+  "eslintIgnore": [
+    "/public/bundle.js"
+  ],
+  "jest": {
+    "verbose": true,
+    "setupTestFrameworkScriptFile": "./test/src/setup.tests.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
 }
