@@ -57,16 +57,16 @@ const splashButtonStyle = {
   'width': '10%',
   'height': '4%',
   'paddingTop': '0.6%',
-  'font': '400 14px system-ui',
-  'color': 'grey',
+  'font': '400 12px system-ui',
+  'color': '#484848',
   'float': 'right',
-  'marginLeft': '87.4%',
+  'marginLeft': '86.4%',
   'ZIndex': '-2',
-  'marginTop': '38.6%',
+  'marginTop': '37.6%',
   'textAlign': 'center',
   'borderRadius': '4px',
   'background': 'lightGrey',
-  'border': '2px solid lightGrey',
+  'border': '1px solid #484848',
 };
 
 const splashButtonAreaStyle = {
@@ -88,13 +88,13 @@ const splashButtonAreaStyle = {
 const titleStyle = {
   'position': 'relative',
   'fontSize': '30px',
-  'marginLeft': '2%',
+  'marginLeft': '1%',
   'marginTop': '2%',
   'ZIndex': '-1',
   'display': 'block',
   'marginBottom': '2%',
   'font': '400 32px system-ui',
-  'color': 'grey'
+  'color': '#484848'
 };
 
 const listTableStyle = {
@@ -110,7 +110,7 @@ const staticGalleryStyle = {
   'position': 'absolute',
   'ZIndex': '-1',
   'align': 'center',
-  'marginLeft': '18.71%',
+  'marginLeft': '19.71%',
   'marginTop': '50%',
   'marginBottom': '30%',
   'width': '65%',
@@ -257,18 +257,16 @@ const tourRoomsModalContentStyle = {
   'paddingLeft': '2%',
   'paddingBottom': '1.5%',
   'position': 'static',
-  // 'border': '1px solid lightGrey',
   'ZIndex': '1',
   'top': '0',
   'left': '0',
   'float': 'left',
-  'width': '67%',
+  'width': '66%',
   'marginRight': '0.2%',
   'marginTop': '1%',
   'marginBottom': '1%',
   'marginLeft': '16%',
   'maxWidth': '67%',
-  'borderRadius': '10px',
   'height': '550px',
   'maxHeight': '750px',
 };
@@ -286,14 +284,15 @@ const tourRoomsModalImageStyle = {
 };
 
 const tourRoomsModalLabelStyle = {
-  'width': '80%',
+  'width': '64.5%',
   'float': 'left',
   'display': 'block',
   'ZIndex': '1',
   'position': 'static',
   'marginTop': '4%',
   'marginLeft': '18%',
-  'color': 'grey',
+  'color': '#484848',
+  'borderBottom': '1px solid lightGrey',
   'font': '400 36px system-ui'
 };
 
@@ -308,7 +307,7 @@ const exploreButtonStyle = {
   'color': '#a61d55',
   'float': 'left',
   'marginBottom': '3%',
-  'marginLeft': '18.21%',
+  'marginLeft': '19%',
   'marginTop': '124.8%',
   'textAlign': 'center',
   'borderRadius': '4px',
