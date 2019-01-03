@@ -28,13 +28,12 @@ var TourRoomsModal = (props) => {
 
     imgCount += room.numImages;
 
-
     return (
-      <Grid style={style.tourRoomsModalContentStyle} fluid>
-        <Label >{roomName}</Label>
-        <Row>
+      <Grid>
+        <Label style={style.tourRoomsModalLabelStyle} >{roomName}</Label>
+        <Col style={style.tourRoomsModalContentStyle}>
           {cols}
-        </Row>
+        </Col>
       </Grid>
     )
   })

@@ -16,8 +16,8 @@ export default class PhotoModal extends React.Component {
     this.state = {
       show: false,
       displayStyle: this.props.displayStyle,
-      displayViewStyle: style.staticNoStyle,
-      displayTourStyle: style.staticNoStyle,
+      displayViewStyle: style.tourRoomsModalStyle,
+      displayTourStyle: style.viewRoomsModalStyle,
       splashButtonStyle: style.splashButtonStyle,
       exploreButtonStyle: style.exploreButtonStyle,
       splashButtonAreaStyle: style.splashButtonAreaStyle, 
@@ -54,6 +54,7 @@ export default class PhotoModal extends React.Component {
       exploreButtonStyle: style.buttonHideStyle, 
       exploreButtonAreaStyle: style.buttonHideStyle, 
       buttonContent:'View all rooms',  
+      displayStyle: style.tourRoomsModalStyle,
       displayViewStyle: style.staticNoStyle, 
       displayTourStyle: style.tourRoomsModalStyle, 
       tourRoomsPage: true, 
@@ -71,7 +72,8 @@ export default class PhotoModal extends React.Component {
       exploreButtonStyle: style.buttonHideStyle, 
       exploreButtonAreaStyle: style.buttonHideStyle, 
       buttonContent:'Tour this home', 
-      displayViewStyle: style.staticNoStyle,
+      displayStyle: style.viewRoomsModalStyle,
+      displayViewStyle: style.viewRoomsModalStyle,
       displayTourStyle: style.staticNoStyle, 
       tourRoomsPage: false, 
       viewAllPage: true
@@ -111,7 +113,7 @@ export default class PhotoModal extends React.Component {
         </div>
 
         <Modal
-          style={style.viewRoomsModalStyle}
+          style={style.tourRoomsModalStyle}
           show={this.state.show}
           onHide={() => this.handleClose()}
           container={this}
@@ -138,7 +140,7 @@ export default class PhotoModal extends React.Component {
             <div style={this.state.displayViewStyle} className='view-rooms-modal'>
               <ViewRoomsModal displayStyle={this.state.displayViewStyle} className='view-rooms-modal' rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
-            <div style={this.state.displayTourStyle} className='tour-rooms-modal'>
+            <div style={this.state.displayTourStyle}className='tour-rooms-modal'>
               <TourRoomsModal displayStyle={this.state.displayTourStyle} rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
           </Modal.Body>

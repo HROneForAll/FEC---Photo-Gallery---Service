@@ -15,7 +15,6 @@ const buttonShowStyle = {
   'position': 'absolute',
   'top': '0',
   'left': '0',
-  // 'float': 'right',
   'marginLeft': '33%',
   'marginTop': '10%',
   'ZIndex': '-1',
@@ -36,7 +35,6 @@ const splashStyle = {
   'position': 'absolute',
   'top': '0',
   'left': '0',
-  // 'float': 'right',
   'border': 'none',
   'marginLeft': '33%',
   'marginTop': '10%',
@@ -81,15 +79,9 @@ const splashButtonAreaStyle = {
   'ZIndex': '-1',
   'border': 'none',
   'background': 'none',
-  // 'float': 'right',
   'border': 'none',
   'marginLeft': '33%',
   'marginTop': '10%',
-  // 'marginLeft': '87.4%',
-  // 'marginRight': '.1%',
-  // 'marginLeft': '33%',
-  // 'marginTop': '20%',
-  // 'marginBottom': '10%',
 };
 
 const titleStyle = {
@@ -108,7 +100,6 @@ const listTableStyle = {
   'display': 'grid',
   'position': 'absolute',
   'display': 'flex',
-  // 'marginLeft': '20.71%',
   'height': 'auto',
   'ZIndex': '-1',
   'font': '400 14px system-ui'
@@ -143,26 +134,18 @@ const roomLabelStyle = {
 };
 
 const viewRoomsModalStyle = {
-  'display': 'grid',
-  'display': 'inline-block',
-  // 'gridAutoFlow': 'rows',
-  // 'flex': '25%',
-  // 'flexFlow': 'row wrap',
-  // 'flexDirection': 'row',
-  // 'flexWrap': 'wrap',
-  'position': 'absolute',
+  'display': 'flex',
+  'flexDirection': 'column',
+  'position': 'static',
   'background': 'none',
   'ZIndex': '1',
   'left': '0',
   'top': '0',
-  // 'gridAutoFlow': 'row',
-  // 'flexDirection': 'rows',
-  // 'flexWrap': 'wrap',
   'borderColor': 'white',
   'overflow': 'scroll',
   'float': 'left',
-  'width': '80%',
-  'maxWidth': '80%',
+  'width': '60%',
+  'maxWidth': '60%',
   'height': 'auto',
   'minHeight': '100%',
   'paddingTop': '7%',
@@ -173,44 +156,27 @@ const viewRoomsModalStyle = {
 
 
 const viewRoomsModalRowStyle = {
-  // 'display': 'flex',
-  'display': 'row',
-  // 'gridAutoFlow': 'rows',
-  // 'flex': '1 1 auto',
-  // 'flexFlow': 'row wrap',
-  // 'flexDirection': 'row',
-  // 'flexWrap': 'wrap',
+  'display': 'flex',
   'position': 'static',
   'backgroundColor': 'white',
   'ZIndex': '1',
   'left': '0',
   'top': '0',
-  // 'gridAutoFlow': 'row',
-  // 'flexDirection': 'rows',
-  // 'flexWrap': 'wrap',
   'borderColor': 'white',
-  'overflow': 'scroll',
   'float': 'left',
   'width': '100%',
   'maxWidth': '100%',
   'height': 'auto',
   'minHeight': '100%',
   'paddingTop': '1%',
-  // 'paddingLeft': '10.71%',
   'font': '400 16px system-ui'
 };
 
 const viewRoomsModalColStyle = {
-  'display': 'inline-block',
-  //  'flex': '25%',
-  // 'boxSizing': 'border-box',
-  // 'horizontalAlign': 'middle',
-  // 'gridAutoFlow': 'rows',
-  // 'flex': '25%',
-  // 'flexFlow': 'row wrap',
-  // 'flexDirection': 'row',
-  // 'flexWrap': 'wrap',
-  'position': 'relative',
+  'display': 'flex',
+  'flexDirection': 'row',
+  'flexWrap': 'wrap',
+  'position': 'static',
   'backgroundColor': 'white',
   'ZIndex': '1',
   'top': '0',
@@ -227,12 +193,8 @@ const viewRoomsModalImageStyle = {
   'height': '101px',
   'display': 'block',
   'float': 'left',
-  // 'borderRadius': '5px',
-  // 'ZIndex': '1',
   'position': 'static',
   'margin': '5px',
-  // 'marginBottom': '5px',
-  // 'marginRight': '5px'
 };
 
 const modalNavStyle = {
@@ -264,8 +226,8 @@ const changeModalButtonStyle = {
 
 const tourRoomsModalStyle = {
   'display': 'grid',
-  'position': 'absolute',
-  'backgroundColor': 'white',
+  'position': 'static',
+  'background': 'none',
   'ZIndex': '1',
   'left': '0',
   'top': '0',
@@ -276,45 +238,54 @@ const tourRoomsModalStyle = {
   'height': '100%',
   'minHeight': '100%',
   'paddingTop': '7%',
-  'paddingLeft': '5%',
-  'font': '400 16px system-ui'
 };
 
 const tourRoomsModalContentStyle = {
   'display': 'flex',
   'flex': '1 1 auto',
-  'flexDirection': 'columns',
-  // 'flexWrap': 'wrap',
-  'overflow': 'auto',
-  'flexFlow': 'column wrap',
-  // 'flexDirection': '',
+  'flexDirection': 'row',
+  'overflow': 'scroll',
+  'flexFlow': 'row wrap',
+  'marginTop': '7%',
+  'paddingLeft': '10%',
+  'alignSelf': 'middle',
   'position': 'static',
   'backgroundColor': 'white',
+  'textAlign': 'left',
   'ZIndex': '1',
   'top': '0',
   'left': '0',
   'float': 'left',
-  'width': '40%',
-  'marginTop': '40px',
+  'width': '50%',
+  'marginTop': '10px',
   'marginRight': '40px',
-  'maxWidth': '60%',
-  'height': '244px',
-  'maxHeight': '500px',
-  'font': '400 36px system-ui'
+  'maxWidth': '75%',
+  'height': '280px',
+  'maxHeight': '300px',
 };
 
 const tourRoomsModalImageStyle = {
-  'width': '202px',
-  // 'maxWidth': '100%',
-  'height': '202px',
+  'width': '250px',
+  'height': '250px',
   'float': 'left',
   'borderRadius': '5px',
   'ZIndex': '1',
   'position': 'static',
-  // 'margin': '5px'
-  'marginTop': '20px',
+  'marginTop': '3%',
   'marginBottom': '20px',
-  'marginRight': '5px'
+};
+
+const tourRoomsModalLabelStyle = {
+  'width': '5%',
+  'float': 'left',
+  'display': 'row',
+  'ZIndex': '1',
+  'position': 'static',
+  'marginTop': '3%',
+  'marginLeft': '10%',
+  'marginBottom': '20px',
+  'paddingRight': '5%',
+  'font': '400 36px system-ui'
 };
 
 const exploreButtonStyle = {
@@ -329,7 +300,6 @@ const exploreButtonStyle = {
   'float': 'left',
   'marginLeft': '18.21%',
   'marginTop': '124.8%',
-  // 'marginBottom': '5%',
   'textAlign': 'center',
   'borderRadius': '4px',
   'background': 'none',
@@ -344,7 +314,6 @@ const exploreButtonAreaStyle = {
   'left': '0',
   'width': '10%',
   'height': '5%',
-  // 'float': 'right',
   'marginLeft': '18.21%',
   'marginTop': '124.8%',
   'borderRadius': '4px',
@@ -403,6 +372,7 @@ export default {
   modalNavStyle,
   changeModalButtonStyle,
   tourRoomsModalStyle,
+  tourRoomsModalLabelStyle,
   tourRoomsModalContentStyle,
   tourRoomsModalImageStyle,
   exploreButtonStyle,

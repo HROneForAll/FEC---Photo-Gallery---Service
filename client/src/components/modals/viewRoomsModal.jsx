@@ -29,7 +29,7 @@ var ViewRoomsModal = (props) => {
     imgCount += room.numImages;
 
     return (
-      <Grid fluid>
+      <Grid>
         <Row style={style.viewRoomsModalRowStyle}>
           {cols}
         </Row>
