@@ -21,7 +21,9 @@ var ViewRoomsModal = (props) => {
     // </div>
       cols.push(
         <Col xs={6} md={3}>
-          <img style={style.viewRoomsModalImageStyle} href="#" src={url} />
+          <div>
+            <img style={style.viewRoomsModalImageStyle} src={url} ></img>
+          </div>
         </Col>
       )
     }

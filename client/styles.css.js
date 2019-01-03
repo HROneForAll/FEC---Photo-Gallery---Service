@@ -45,7 +45,8 @@ const splashImageStyle = {
   'width': '1082.66px',
   'maxWidth': '1082.66px',
   'height': '686px',
-  'maxHeight': '686px'
+  'maxHeight': '686px',
+  'borderRadius': '5px'
 };
 
 const splashButtonStyle = {
@@ -60,7 +61,7 @@ const splashButtonStyle = {
   'color': 'grey',
   'float': 'right',
   'marginLeft': '87.4%',
-  'ZIndex': '-1',
+  'ZIndex': '-2',
   'marginTop': '38.6%',
   'textAlign': 'center',
   'borderRadius': '4px',
@@ -124,6 +125,7 @@ const listImageStyle = {
   'marginLeft': '5px',
   'marginRight': '5px',
   'ZIndex': '-1',
+  'borderRadius': '5px'
 };
 
 const roomLabelStyle = {
@@ -131,6 +133,8 @@ const roomLabelStyle = {
   'marginLeft': '4px',
   'marginBottom': '10%',
   'ZIndex': '-1',
+  'color': 'grey',
+  'font': '400 16px system-ui'
 };
 
 const viewRoomsModalStyle = {
@@ -144,12 +148,13 @@ const viewRoomsModalStyle = {
   'borderColor': 'white',
   'overflow': 'scroll',
   'float': 'left',
-  'width': '60%',
-  'maxWidth': '60%',
+  'width': '40%',
+  'maxWidth': '40%',
   'height': 'auto',
   'minHeight': '100%',
   'paddingTop': '7%',
-  'paddingLeft': '10.71%',
+  'paddingBottom': '10%',
+  'paddingLeft': '20.71%',
   'font': '400 16px system-ui'
 };
 
@@ -157,6 +162,7 @@ const viewRoomsModalStyle = {
 
 const viewRoomsModalRowStyle = {
   'display': 'flex',
+  'flexWrap': 'column wrap',
   'position': 'static',
   'backgroundColor': 'white',
   'ZIndex': '1',
@@ -168,14 +174,15 @@ const viewRoomsModalRowStyle = {
   'maxWidth': '100%',
   'height': 'auto',
   'minHeight': '100%',
-  'paddingTop': '1%',
+  'paddingTop': '4%',
+  'color': 'grey',
   'font': '400 16px system-ui'
 };
 
 const viewRoomsModalColStyle = {
   'display': 'flex',
-  'flexDirection': 'row',
-  'flexWrap': 'wrap',
+  'flex': '0 1 auto',
+  'flexWrap': 'column wrap',
   'position': 'static',
   'backgroundColor': 'white',
   'ZIndex': '1',
@@ -194,7 +201,9 @@ const viewRoomsModalImageStyle = {
   'display': 'block',
   'float': 'left',
   'position': 'static',
-  'margin': '5px',
+  'marginRight': '20px',
+  'marginBottom': '10px',
+  'borderRadius': '10px',
 };
 
 const modalNavStyle = {
@@ -206,7 +215,6 @@ const modalNavStyle = {
   'height': '70px',
   'left': '0',
   'top': '0',
-  'marginBottom': '10%'
 };
 
 const changeModalButtonStyle = {
@@ -237,7 +245,7 @@ const tourRoomsModalStyle = {
   'maxWidth': '100%',
   'height': '100%',
   'minHeight': '100%',
-  'paddingTop': '7%',
+  'marginTop': '1%',
 };
 
 const tourRoomsModalContentStyle = {
@@ -246,45 +254,45 @@ const tourRoomsModalContentStyle = {
   'flexDirection': 'row',
   'overflow': 'scroll',
   'flexFlow': 'row wrap',
-  'marginTop': '7%',
-  'paddingLeft': '10%',
-  'alignSelf': 'middle',
+  'paddingLeft': '5%',
   'position': 'static',
   'backgroundColor': 'white',
-  'textAlign': 'left',
   'ZIndex': '1',
   'top': '0',
   'left': '0',
   'float': 'left',
-  'width': '50%',
-  'marginTop': '10px',
-  'marginRight': '40px',
-  'maxWidth': '75%',
-  'height': '280px',
-  'maxHeight': '300px',
+  'width': '67%',
+  'marginRight': '0.2%',
+  'marginTop': '1%',
+  'marginBottom': '1%',
+  'marginLeft': '14.71%',
+  'maxWidth': '67%',
+  'borderRadius': '10px',
+  'height': '400px',
+  'maxHeight': '750px',
 };
 
 const tourRoomsModalImageStyle = {
-  'width': '250px',
-  'height': '250px',
+  'display': 'block',
+  'width': 'auto',
+  'height': '350px',
   'float': 'left',
   'borderRadius': '5px',
   'ZIndex': '1',
   'position': 'static',
-  'marginTop': '3%',
-  'marginBottom': '20px',
+  'marginRight': '20px',
+  'marginTop': '4%'
 };
 
 const tourRoomsModalLabelStyle = {
-  'width': '5%',
+  'width': '80%',
   'float': 'left',
-  'display': 'row',
+  'display': 'block',
   'ZIndex': '1',
   'position': 'static',
-  'marginTop': '3%',
-  'marginLeft': '10%',
-  'marginBottom': '20px',
-  'paddingRight': '5%',
+  'marginTop': '4%',
+  'marginLeft': '20%',
+  'color': 'grey',
   'font': '400 36px system-ui'
 };
 
@@ -298,6 +306,7 @@ const exploreButtonStyle = {
   'font': '400 14px system-ui',
   'color': '#a61d55',
   'float': 'left',
+  'marginBottom': '3%',
   'marginLeft': '18.21%',
   'marginTop': '124.8%',
   'textAlign': 'center',

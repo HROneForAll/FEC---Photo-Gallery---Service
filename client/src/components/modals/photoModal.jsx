@@ -97,7 +97,7 @@ export default class PhotoModal extends React.Component {
             onClick={() => this.handleTourOpen()}
             >
           </Button>
-          <div style={this.state.splashButtonStyle}>
+          <div onClick={() => this.handleTourOpen()} style={this.state.splashButtonStyle}>
             <span> TOUR THIS HOME </span> 
           </div>
         </div>
