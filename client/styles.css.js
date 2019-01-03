@@ -254,9 +254,10 @@ const tourRoomsModalContentStyle = {
   'flexDirection': 'row',
   'overflow': 'scroll',
   'flexFlow': 'row wrap',
-  'paddingLeft': '5%',
+  'paddingLeft': '2%',
+  'paddingBottom': '1.5%',
   'position': 'static',
-  'backgroundColor': 'white',
+  // 'border': '1px solid lightGrey',
   'ZIndex': '1',
   'top': '0',
   'left': '0',
@@ -265,10 +266,10 @@ const tourRoomsModalContentStyle = {
   'marginRight': '0.2%',
   'marginTop': '1%',
   'marginBottom': '1%',
-  'marginLeft': '12.71%',
+  'marginLeft': '16%',
   'maxWidth': '67%',
   'borderRadius': '10px',
-  'height': '400px',
+  'height': '550px',
   'maxHeight': '750px',
 };
 
@@ -281,7 +282,7 @@ const tourRoomsModalImageStyle = {
   'ZIndex': '1',
   'position': 'static',
   'marginRight': '20px',
-  'marginTop': '4%'
+  'marginTop': '5%'
 };
 
 const tourRoomsModalLabelStyle = {
