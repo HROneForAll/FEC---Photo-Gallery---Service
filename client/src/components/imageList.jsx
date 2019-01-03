@@ -35,7 +35,7 @@ var ImageList = (props) => {
 
   return (
     
-    <div style={style.staticGalleryStyle}>
+    <div style={style.staticGalleryStyle} className='static-gallery'>
       <div className='tour-title'>
         <div style={style.titleStyle}>
           <h1>Tour this house</h1>

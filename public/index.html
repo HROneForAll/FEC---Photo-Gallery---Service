@@ -4,7 +4,9 @@
     <title> BareBnb Plus </title>
   </head>
   <body>
-    <div id="photo-gallery"></div>
+    <div id="Photo-gallery">
+      <div></div>
+    </div>
     <script src="./bundle.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <style>
@@ -12,7 +14,8 @@
         position: relative;
       }
       .modal-container .modal, .modal-container .modal-backdrop {
-        position: absolute;
+        position: static;
+        display: flex;
       }
     </style>
   </body>

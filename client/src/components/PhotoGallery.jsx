@@ -46,8 +46,8 @@ export default class PhotoGallery extends React.Component {
     return (
       <div>
         <div style={this.state.displayStyle}>
-          <div className='splash'>
-            <Splash 
+          <div style={style.splashStyle} className='splash'>
+            <Splash
             imageUrls={this.state.imageUrls}/>
           </div>
           <div className='room_images_list'>

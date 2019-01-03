@@ -16,9 +16,12 @@ export default class PhotoModal extends React.Component {
     this.state = {
       show: false,
       displayStyle: this.props.displayStyle,
-      displayViewStyle: style.staticNoStyle,
-      displayTourStyle: style.staticNoStyle,
-      buttonStyle: style.buttonShowStyle,
+      displayViewStyle: style.tourRoomsModalStyle,
+      displayTourStyle: style.viewRoomsModalStyle,
+      splashButtonStyle: style.splashButtonStyle,
+      exploreButtonStyle: style.exploreButtonStyle,
+      splashButtonAreaStyle: style.splashButtonAreaStyle, 
+      exploreButtonAreaStyle: style.exploreButtonAreaStyle, 
       buttonContent: '',
       viewAllPage: false,
       tourRoomsPage: false
@@ -27,17 +30,54 @@ export default class PhotoModal extends React.Component {
 
   handleClose() {
     this.props.handleClose()
-    this.setState({ show: false, buttonStyle: style.buttonShowStyle });
+    this.setState({ 
+      show: false,
+      buttonStyle: style.splashButtonAreaStyle,
+      splashButtonStyle: style.splashButtonStyle,
+      exploreButtonStyle: style.exploreButtonStyle,
+      splashButtonAreaStyle: style.splashButtonAreaStyle, 
+      exploreButtonAreaStyle: style.exploreButtonAreaStyle, 
+      displayViewStyle: style.staticNoStyle, 
+      displayTourStyle: style.staticNoStyle, 
+      viewAllPage: false,
+      tourRoomsPage: false
+    });
   }
 
   handleTourOpen() {
     this.props.handleOpen()
-    this.setState({ show: true, buttonStyle: style.buttonHideStyle, buttonContent:'View all rooms',  displayViewStyle: style.staticNoStyle, displayTourStyle: style.staticStyle, tourRoomsPage: true, viewAllPage: false })
+    this.setState({ 
+      show: true, 
+      buttonStyle: style.staticNoStyle, 
+      splashButtonStyle: style.buttonHideStyle, 
+      splashButtonAreaStyle: style.buttonHideStyle, 
+      exploreButtonStyle: style.buttonHideStyle, 
+      exploreButtonAreaStyle: style.buttonHideStyle, 
+      buttonContent:'View all rooms',  
+      displayStyle: style.tourRoomsModalStyle,
+      displayViewStyle: style.staticNoStyle, 
+      displayTourStyle: style.tourRoomsModalStyle, 
+      tourRoomsPage: true, 
+      viewAllPage: false 
+    });
   }
 
   handleViewOpen() {
     this.props.handleOpen()
-    this.setState({ show: true, buttonStyle: style.buttonHideStyle, buttonContent:'Tour this home', displayViewStyle: style.staticStyle, displayTourStyle: style.staticNoStyle, tourRoomsPage: false, viewAllPage: true})
+    this.setState({ 
+      show: true, 
+      buttonStyle: style.staticNoStyle,
+      splashButtonStyle: style.buttonHideStyle, 
+      splashButtonAreaStyle: style.buttonHideStyle, 
+      exploreButtonStyle: style.buttonHideStyle, 
+      exploreButtonAreaStyle: style.buttonHideStyle, 
+      buttonContent:'Tour this home', 
+      displayStyle: style.viewRoomsModalStyle,
+      displayViewStyle: style.viewRoomsModalStyle,
+      displayTourStyle: style.staticNoStyle, 
+      tourRoomsPage: false, 
+      viewAllPage: true
+    });
   }
 
   handleModalChange() {
@@ -50,24 +90,30 @@ export default class PhotoModal extends React.Component {
 
   render() {
     return (
-      <div className="modal-container">
-        <Button 
-          style={style.splashButtonStyle}
-          onClick={() => this.handleTourOpen()}
+      <div className='modal-container'>
+        <div className='tour-button' >
+          <Button
+            style={this.state.splashButtonAreaStyle}
+            onClick={() => this.handleTourOpen()}
+            >
+          </Button>
+          <div onClick={() => this.handleTourOpen()} style={this.state.splashButtonStyle}>
+            <span> TOUR THIS HOME </span> 
+          </div>
+        </div>
+        <div className='explore-button'>
+          <Button
+            style={this.state.exploreButtonStyle}
+            bsStyle="primary"
+            bsSize="large"
+            onClick={() => this.handleViewOpen()}
           >
-          TOUR THIS HOME
-        </Button>
-        <Button
-          style={this.state.buttonStyle}
-          bsStyle="primary"
-          bsSize="large"
-          onClick={() => this.handleViewOpen()}
-        >
-          Explore all {this.props.imageUrls.length} photos
-        </Button>
+            Explore all {this.props.imageUrls.length} photos
+          </Button>
+        </div>
 
         <Modal
-          style={style.viewRoomsModalStyle}
+          style={style.tourRoomsModalStyle}
           show={this.state.show}
           onHide={() => this.handleClose()}
           container={this}
@@ -92,15 +138,15 @@ export default class PhotoModal extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <div style={this.state.displayViewStyle} className='view-rooms-modal'>
-              <ViewRoomsModal rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
+              <ViewRoomsModal displayStyle={this.state.displayViewStyle} className='view-rooms-modal' rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
-            <div style={this.state.displayTourStyle} className='tour-rooms-modal'>
-              <TourRoomsModal rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
+            <div style={this.state.displayTourStyle}className='tour-rooms-modal'>
+              <TourRoomsModal displayStyle={this.state.displayTourStyle} rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
           </Modal.Body>
         </Modal>
       </div>
     );
-  }
+  };
 };
 

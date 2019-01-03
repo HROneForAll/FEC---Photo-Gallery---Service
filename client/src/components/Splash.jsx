@@ -5,9 +5,7 @@ var Splash = (props) => {
   let splashImage = props.imageUrls[24] || props.imageUrls[0];
   return (
     <div className='splash' id='splash-image'>
-      <div>
-        <img src={splashImage} style={style.splashStyle} ></img>
-      </div>
+        <img src={splashImage} style={style.splashImageStyle} ></img>
     </div>
   )
 };
