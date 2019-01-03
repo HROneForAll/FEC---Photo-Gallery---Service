@@ -265,7 +265,7 @@ const tourRoomsModalContentStyle = {
   'marginRight': '0.2%',
   'marginTop': '1%',
   'marginBottom': '1%',
-  'marginLeft': '14.71%',
+  'marginLeft': '12.71%',
   'maxWidth': '67%',
   'borderRadius': '10px',
   'height': '400px',
@@ -274,7 +274,7 @@ const tourRoomsModalContentStyle = {
 
 const tourRoomsModalImageStyle = {
   'display': 'block',
-  'width': 'auto',
+  'width': '525px',
   'height': '350px',
   'float': 'left',
   'borderRadius': '5px',
@@ -291,7 +291,7 @@ const tourRoomsModalLabelStyle = {
   'ZIndex': '1',
   'position': 'static',
   'marginTop': '4%',
-  'marginLeft': '20%',
+  'marginLeft': '18%',
   'color': 'grey',
   'font': '400 36px system-ui'
 };
