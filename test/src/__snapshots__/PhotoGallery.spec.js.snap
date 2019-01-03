@@ -8,8 +8,9 @@ exports[`ImageList should render correctly with data 1`] = `
       "ZIndex": "-1",
       "align": "center",
       "height": "auto",
+      "marginBottom": "30%",
       "marginLeft": "18.71%",
-      "marginTop": "60%",
+      "marginTop": "50%",
       "position": "absolute",
       "width": "65%",
     }
@@ -46,7 +47,7 @@ exports[`ImageList should render correctly with data 1`] = `
         "display": "flex",
         "font": "400 14px system-ui",
         "height": "auto",
-        "position": "relative",
+        "position": "absolute",
       }
     }
   >
@@ -234,8 +235,9 @@ exports[`ImageList should render correctly without data 1`] = `
       "ZIndex": "-1",
       "align": "center",
       "height": "auto",
+      "marginBottom": "30%",
       "marginLeft": "18.71%",
-      "marginTop": "60%",
+      "marginTop": "50%",
       "position": "absolute",
       "width": "65%",
     }
@@ -272,7 +274,7 @@ exports[`ImageList should render correctly without data 1`] = `
         "display": "flex",
         "font": "400 14px system-ui",
         "height": "auto",
-        "position": "relative",
+        "position": "absolute",
       }
     }
   >
@@ -355,6 +357,7 @@ exports[`ImageListEntry should render correctly with data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
+          "borderRadius": "5px",
           "height": "164px",
           "marginLeft": "5px",
           "marginRight": "5px",
@@ -368,6 +371,8 @@ exports[`ImageListEntry should render correctly with data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
+          "color": "grey",
+          "font": "400 16px system-ui",
           "marginBottom": "10%",
           "marginLeft": "4px",
           "position": "relative",
@@ -459,23 +464,24 @@ exports[`PhotoModal should render correctly with data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
+          "background": "none",
           "border": "none",
           "display": "block",
           "height": "686px",
-          "left": "0",
           "marginLeft": "33%",
           "marginTop": "10%",
           "maxHeight": "686px",
           "maxWidth": "1082.66px",
-          "position": "absolute",
-          "top": "0",
+          "position": "relative",
           "width": "1082.66px",
         }
       }
     />
     <div
+      onClick={[Function]}
       style={
         Object {
+          "ZIndex": "-2",
           "background": "lightGrey",
           "border": "2px solid lightGrey",
           "borderRadius": "4px",
@@ -483,10 +489,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
           "display": "block",
           "float": "right",
           "font": "400 14px system-ui",
-          "height": "25%",
+          "height": "4%",
           "left": "0",
           "marginLeft": "87.4%",
-          "marginTop": "47.8%",
+          "marginTop": "38.6%",
+          "paddingTop": "0.6%",
           "position": "absolute",
           "textAlign": "center",
           "top": "0",
@@ -494,24 +501,49 @@ exports[`PhotoModal should render correctly with data 1`] = `
         }
       }
     >
-      <p>
+      <span>
          TOUR THIS HOME 
-      </p>
+      </span>
     </div>
   </div>
-  <Button
-    active={false}
-    block={false}
-    bsClass="btn"
-    bsSize="large"
-    bsStyle="primary"
-    disabled={false}
-    onClick={[Function]}
+  <div
+    className="explore-button"
   >
-    Explore all 
-    3
-     photos
-  </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsSize="large"
+      bsStyle="primary"
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "ZIndex": "-1",
+          "background": "none",
+          "border": "none",
+          "borderRadius": "4px",
+          "color": "#a61d55",
+          "display": "block",
+          "float": "left",
+          "font": "400 14px system-ui",
+          "height": "5%",
+          "left": "0",
+          "marginBottom": "3%",
+          "marginLeft": "18.21%",
+          "marginTop": "124.8%",
+          "position": "absolute",
+          "textAlign": "center",
+          "top": "0",
+          "width": "10%",
+        }
+      }
+    >
+      Explore all 
+      3
+       photos
+    </Button>
+  </div>
   <Modal
     animation={true}
     aria-labelledby="contained-modal-title"
@@ -550,48 +582,93 @@ exports[`PhotoModal should render correctly with data 1`] = `
         "setState": [Function],
         "state": Object {
           "buttonContent": "",
-          "buttonStyle": Object {
-            "ZIndex": "-1",
-            "border": "none",
-            "display": "block",
-            "height": "686px",
-            "left": "0",
-            "marginLeft": "33%",
-            "marginTop": "10%",
-            "maxHeight": "686px",
-            "maxWidth": "1082.66px",
-            "position": "absolute",
-            "top": "0",
-            "width": "1082.66px",
-          },
           "displayStyle": Object {
             "display": "none",
           },
           "displayTourStyle": Object {
-            "display": "none",
+            "ZIndex": "1",
+            "background": "none",
+            "borderColor": "white",
+            "display": "flex",
+            "flexDirection": "column",
+            "float": "left",
+            "font": "400 16px system-ui",
+            "height": "auto",
+            "left": "0",
+            "maxWidth": "40%",
+            "minHeight": "100%",
+            "overflow": "scroll",
+            "paddingBottom": "10%",
+            "paddingLeft": "20.71%",
+            "paddingTop": "7%",
+            "position": "static",
+            "top": "0",
+            "width": "40%",
           },
           "displayViewStyle": Object {
-            "display": "none",
+            "ZIndex": "1",
+            "background": "none",
+            "borderColor": "white",
+            "display": "grid",
+            "float": "left",
+            "height": "100%",
+            "left": "0",
+            "marginTop": "1%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "position": "static",
+            "top": "0",
+            "width": "100%",
           },
-          "exporeButtonStyle": Object {
+          "exploreButtonAreaStyle": Object {
+            "ZIndex": "-1",
+            "background": "none",
+            "border": "none",
+            "borderRadius": "4px",
+            "display": "block",
+            "height": "5%",
+            "left": "0",
+            "marginLeft": "18.21%",
+            "marginTop": "124.8%",
+            "position": "absolute",
+            "top": "0",
+            "width": "10%",
+          },
+          "exploreButtonStyle": Object {
+            "ZIndex": "-1",
             "background": "none",
             "border": "none",
             "borderRadius": "4px",
             "color": "#a61d55",
             "display": "block",
-            "float": "right",
+            "float": "left",
             "font": "400 14px system-ui",
-            "height": "225%",
+            "height": "5%",
             "left": "0",
-            "marginLeft": "18.71%",
-            "marginTop": "47.8%",
+            "marginBottom": "3%",
+            "marginLeft": "18.21%",
+            "marginTop": "124.8%",
             "position": "absolute",
             "textAlign": "center",
             "top": "0",
             "width": "10%",
           },
           "show": false,
-          "tourButtonStyle": Object {
+          "splashButtonAreaStyle": Object {
+            "ZIndex": "-1",
+            "background": "none",
+            "border": "none",
+            "display": "block",
+            "height": "686px",
+            "marginLeft": "33%",
+            "marginTop": "10%",
+            "maxHeight": "686px",
+            "maxWidth": "1082.66px",
+            "position": "relative",
+            "width": "1082.66px",
+          },
+          "splashButtonStyle": Object {
+            "ZIndex": "-2",
             "background": "lightGrey",
             "border": "2px solid lightGrey",
             "borderRadius": "4px",
@@ -599,10 +676,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "display": "block",
             "float": "right",
             "font": "400 14px system-ui",
-            "height": "25%",
+            "height": "4%",
             "left": "0",
             "marginLeft": "87.4%",
-            "marginTop": "47.8%",
+            "marginTop": "38.6%",
+            "paddingTop": "0.6%",
             "position": "absolute",
             "textAlign": "center",
             "top": "0",
@@ -663,23 +741,24 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   style={
                     Object {
                       "ZIndex": "-1",
+                      "background": "none",
                       "border": "none",
                       "display": "block",
                       "height": "686px",
-                      "left": "0",
                       "marginLeft": "33%",
                       "marginTop": "10%",
                       "maxHeight": "686px",
                       "maxWidth": "1082.66px",
-                      "position": "absolute",
-                      "top": "0",
+                      "position": "relative",
                       "width": "1082.66px",
                     }
                   }
                 />
                 <div
+                  onClick={[Function]}
                   style={
                     Object {
+                      "ZIndex": "-2",
                       "background": "lightGrey",
                       "border": "2px solid lightGrey",
                       "borderRadius": "4px",
@@ -687,10 +766,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
                       "display": "block",
                       "float": "right",
                       "font": "400 14px system-ui",
-                      "height": "25%",
+                      "height": "4%",
                       "left": "0",
                       "marginLeft": "87.4%",
-                      "marginTop": "47.8%",
+                      "marginTop": "38.6%",
+                      "paddingTop": "0.6%",
                       "position": "absolute",
                       "textAlign": "center",
                       "top": "0",
@@ -698,24 +778,49 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     }
                   }
                 >
-                  <p>
+                  <span>
                      TOUR THIS HOME 
-                  </p>
+                  </span>
                 </div>
               </div>
-              <Button
-                active={false}
-                block={false}
-                bsClass="btn"
-                bsSize="large"
-                bsStyle="primary"
-                disabled={false}
-                onClick={[Function]}
+              <div
+                className="explore-button"
               >
-                Explore all 
-                3
-                 photos
-              </Button>
+                <Button
+                  active={false}
+                  block={false}
+                  bsClass="btn"
+                  bsSize="large"
+                  bsStyle="primary"
+                  disabled={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "ZIndex": "-1",
+                      "background": "none",
+                      "border": "none",
+                      "borderRadius": "4px",
+                      "color": "#a61d55",
+                      "display": "block",
+                      "float": "left",
+                      "font": "400 14px system-ui",
+                      "height": "5%",
+                      "left": "0",
+                      "marginBottom": "3%",
+                      "marginLeft": "18.21%",
+                      "marginTop": "124.8%",
+                      "position": "absolute",
+                      "textAlign": "center",
+                      "top": "0",
+                      "width": "10%",
+                    }
+                  }
+                >
+                  Explore all 
+                  3
+                   photos
+                </Button>
+              </div>
               <Modal
                 animation={true}
                 aria-labelledby="contained-modal-title"
@@ -745,21 +850,18 @@ exports[`PhotoModal should render correctly with data 1`] = `
                 style={
                   Object {
                     "ZIndex": "1",
-                    "backgroundColor": "white",
+                    "background": "none",
                     "borderColor": "white",
                     "display": "grid",
                     "float": "left",
-                    "font": "400 16px system-ui",
                     "height": "100%",
                     "left": "0",
-                    "maxWidth": "110%",
+                    "marginTop": "1%",
+                    "maxWidth": "100%",
                     "minHeight": "100%",
-                    "overflow": "scroll",
-                    "paddingLeft": "20.71%",
-                    "paddingTop": "7%",
-                    "position": "absolute",
+                    "position": "static",
                     "top": "0",
-                    "width": "110%",
+                    "width": "100%",
                   }
                 }
               >
@@ -769,12 +871,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   closeLabel="Close"
                   style={
                     Object {
-                      "ZIndex": "1",
+                      "ZIndex": "2",
                       "backgroundColor": "white",
                       "borderBottom": "1px solid lightGrey",
                       "height": "70px",
                       "left": "0",
-                      "marginBottom": "10%",
                       "position": "fixed",
                       "top": "0",
                       "width": "100%",
@@ -853,11 +954,41 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     className="view-rooms-modal"
                     style={
                       Object {
-                        "display": "none",
+                        "ZIndex": "1",
+                        "background": "none",
+                        "borderColor": "white",
+                        "display": "grid",
+                        "float": "left",
+                        "height": "100%",
+                        "left": "0",
+                        "marginTop": "1%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "position": "static",
+                        "top": "0",
+                        "width": "100%",
                       }
                     }
                   >
                     <ViewRoomsModal
+                      className="view-rooms-modal"
+                      displayStyle={
+                        Object {
+                          "ZIndex": "1",
+                          "background": "none",
+                          "borderColor": "white",
+                          "display": "grid",
+                          "float": "left",
+                          "height": "100%",
+                          "left": "0",
+                          "marginTop": "1%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "position": "static",
+                          "top": "0",
+                          "width": "100%",
+                        }
+                      }
                       imageUrls={
                         Array [
                           "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -883,11 +1014,50 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     className="tour-rooms-modal"
                     style={
                       Object {
-                        "display": "none",
+                        "ZIndex": "1",
+                        "background": "none",
+                        "borderColor": "white",
+                        "display": "flex",
+                        "flexDirection": "column",
+                        "float": "left",
+                        "font": "400 16px system-ui",
+                        "height": "auto",
+                        "left": "0",
+                        "maxWidth": "40%",
+                        "minHeight": "100%",
+                        "overflow": "scroll",
+                        "paddingBottom": "10%",
+                        "paddingLeft": "20.71%",
+                        "paddingTop": "7%",
+                        "position": "static",
+                        "top": "0",
+                        "width": "40%",
                       }
                     }
                   >
                     <TourRoomsModal
+                      displayStyle={
+                        Object {
+                          "ZIndex": "1",
+                          "background": "none",
+                          "borderColor": "white",
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "float": "left",
+                          "font": "400 16px system-ui",
+                          "height": "auto",
+                          "left": "0",
+                          "maxWidth": "40%",
+                          "minHeight": "100%",
+                          "overflow": "scroll",
+                          "paddingBottom": "10%",
+                          "paddingLeft": "20.71%",
+                          "paddingTop": "7%",
+                          "position": "static",
+                          "top": "0",
+                          "width": "40%",
+                        }
+                      }
                       imageUrls={
                         Array [
                           "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -941,21 +1111,18 @@ exports[`PhotoModal should render correctly with data 1`] = `
     style={
       Object {
         "ZIndex": "1",
-        "backgroundColor": "white",
+        "background": "none",
         "borderColor": "white",
         "display": "grid",
         "float": "left",
-        "font": "400 16px system-ui",
         "height": "100%",
         "left": "0",
-        "maxWidth": "110%",
+        "marginTop": "1%",
+        "maxWidth": "100%",
         "minHeight": "100%",
-        "overflow": "scroll",
-        "paddingLeft": "20.71%",
-        "paddingTop": "7%",
-        "position": "absolute",
+        "position": "static",
         "top": "0",
-        "width": "110%",
+        "width": "100%",
       }
     }
   >
@@ -965,12 +1132,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
       closeLabel="Close"
       style={
         Object {
-          "ZIndex": "1",
+          "ZIndex": "2",
           "backgroundColor": "white",
           "borderBottom": "1px solid lightGrey",
           "height": "70px",
           "left": "0",
-          "marginBottom": "10%",
           "position": "fixed",
           "top": "0",
           "width": "100%",
@@ -1047,11 +1213,41 @@ exports[`PhotoModal should render correctly with data 1`] = `
         className="view-rooms-modal"
         style={
           Object {
-            "display": "none",
+            "ZIndex": "1",
+            "background": "none",
+            "borderColor": "white",
+            "display": "grid",
+            "float": "left",
+            "height": "100%",
+            "left": "0",
+            "marginTop": "1%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "position": "static",
+            "top": "0",
+            "width": "100%",
           }
         }
       >
         <ViewRoomsModal
+          className="view-rooms-modal"
+          displayStyle={
+            Object {
+              "ZIndex": "1",
+              "background": "none",
+              "borderColor": "white",
+              "display": "grid",
+              "float": "left",
+              "height": "100%",
+              "left": "0",
+              "marginTop": "1%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "position": "static",
+              "top": "0",
+              "width": "100%",
+            }
+          }
           imageUrls={
             Array [
               "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -1077,11 +1273,50 @@ exports[`PhotoModal should render correctly with data 1`] = `
         className="tour-rooms-modal"
         style={
           Object {
-            "display": "none",
+            "ZIndex": "1",
+            "background": "none",
+            "borderColor": "white",
+            "display": "flex",
+            "flexDirection": "column",
+            "float": "left",
+            "font": "400 16px system-ui",
+            "height": "auto",
+            "left": "0",
+            "maxWidth": "40%",
+            "minHeight": "100%",
+            "overflow": "scroll",
+            "paddingBottom": "10%",
+            "paddingLeft": "20.71%",
+            "paddingTop": "7%",
+            "position": "static",
+            "top": "0",
+            "width": "40%",
           }
         }
       >
         <TourRoomsModal
+          displayStyle={
+            Object {
+              "ZIndex": "1",
+              "background": "none",
+              "borderColor": "white",
+              "display": "flex",
+              "flexDirection": "column",
+              "float": "left",
+              "font": "400 16px system-ui",
+              "height": "auto",
+              "left": "0",
+              "maxWidth": "40%",
+              "minHeight": "100%",
+              "overflow": "scroll",
+              "paddingBottom": "10%",
+              "paddingLeft": "20.71%",
+              "paddingTop": "7%",
+              "position": "static",
+              "top": "0",
+              "width": "40%",
+            }
+          }
           imageUrls={
             Array [
               "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -1117,6 +1352,7 @@ exports[`Splash should render correctly with data 1`] = `
     src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
     style={
       Object {
+        "borderRadius": "5px",
         "height": "686px",
         "maxHeight": "686px",
         "maxWidth": "1082.66px",
@@ -1132,39 +1368,55 @@ Array [
   <Grid
     bsClass="container"
     componentClass="div"
-    fluid={true}
-    style={
-      Object {
-        "ZIndex": "1",
-        "backgroundColor": "white",
-        "display": "flex",
-        "flex": "1 1 auto",
-        "flexDirection": "columns",
-        "flexFlow": "column wrap",
-        "float": "left",
-        "font": "400 36px system-ui",
-        "height": "244px",
-        "left": "0",
-        "marginRight": "40px",
-        "marginTop": "40px",
-        "maxHeight": "500px",
-        "maxWidth": "60%",
-        "overflow": "auto",
-        "position": "static",
-        "top": "0",
-        "width": "40%",
-      }
-    }
+    fluid={false}
   >
     <Label
       bsClass="label"
       bsStyle="default"
+      style={
+        Object {
+          "ZIndex": "1",
+          "color": "grey",
+          "display": "block",
+          "float": "left",
+          "font": "400 36px system-ui",
+          "marginLeft": "18%",
+          "marginTop": "4%",
+          "position": "static",
+          "width": "80%",
+        }
+      }
     >
       Bedroom 1
     </Label>
-    <Row
-      bsClass="row"
+    <Col
+      bsClass="col"
       componentClass="div"
+      style={
+        Object {
+          "ZIndex": "1",
+          "borderRadius": "10px",
+          "display": "flex",
+          "flex": "1 1 auto",
+          "flexDirection": "row",
+          "flexFlow": "row wrap",
+          "float": "left",
+          "height": "550px",
+          "left": "0",
+          "marginBottom": "1%",
+          "marginLeft": "16%",
+          "marginRight": "0.2%",
+          "marginTop": "1%",
+          "maxHeight": "750px",
+          "maxWidth": "67%",
+          "overflow": "scroll",
+          "paddingBottom": "1.5%",
+          "paddingLeft": "2%",
+          "position": "static",
+          "top": "0",
+          "width": "67%",
+        }
+      }
     >
       <Row
         bsClass="row"
@@ -1179,13 +1431,13 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
@@ -1204,13 +1456,13 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
@@ -1229,56 +1481,72 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
         </div>
       </Row>
-    </Row>
+    </Col>
   </Grid>,
   <Grid
     bsClass="container"
     componentClass="div"
-    fluid={true}
-    style={
-      Object {
-        "ZIndex": "1",
-        "backgroundColor": "white",
-        "display": "flex",
-        "flex": "1 1 auto",
-        "flexDirection": "columns",
-        "flexFlow": "column wrap",
-        "float": "left",
-        "font": "400 36px system-ui",
-        "height": "244px",
-        "left": "0",
-        "marginRight": "40px",
-        "marginTop": "40px",
-        "maxHeight": "500px",
-        "maxWidth": "60%",
-        "overflow": "auto",
-        "position": "static",
-        "top": "0",
-        "width": "40%",
-      }
-    }
+    fluid={false}
   >
     <Label
       bsClass="label"
       bsStyle="default"
+      style={
+        Object {
+          "ZIndex": "1",
+          "color": "grey",
+          "display": "block",
+          "float": "left",
+          "font": "400 36px system-ui",
+          "marginLeft": "18%",
+          "marginTop": "4%",
+          "position": "static",
+          "width": "80%",
+        }
+      }
     >
       Bedroom 2
     </Label>
-    <Row
-      bsClass="row"
+    <Col
+      bsClass="col"
       componentClass="div"
+      style={
+        Object {
+          "ZIndex": "1",
+          "borderRadius": "10px",
+          "display": "flex",
+          "flex": "1 1 auto",
+          "flexDirection": "row",
+          "flexFlow": "row wrap",
+          "float": "left",
+          "height": "550px",
+          "left": "0",
+          "marginBottom": "1%",
+          "marginLeft": "16%",
+          "marginRight": "0.2%",
+          "marginTop": "1%",
+          "maxHeight": "750px",
+          "maxWidth": "67%",
+          "overflow": "scroll",
+          "paddingBottom": "1.5%",
+          "paddingLeft": "2%",
+          "position": "static",
+          "top": "0",
+          "width": "67%",
+        }
+      }
     >
       <Row
         bsClass="row"
@@ -1292,13 +1560,13 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
@@ -1316,13 +1584,13 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
@@ -1340,13 +1608,13 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
@@ -1364,19 +1632,19 @@ Array [
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
+                "display": "block",
                 "float": "left",
-                "height": "202px",
-                "marginBottom": "20px",
-                "marginRight": "5px",
-                "marginTop": "20px",
+                "height": "350px",
+                "marginRight": "20px",
+                "marginTop": "5%",
                 "position": "static",
-                "width": "202px",
+                "width": "525px",
               }
             }
           />
         </div>
       </Row>
-    </Row>
+    </Col>
   </Grid>,
 ]
 `;
@@ -1387,26 +1655,30 @@ Array [
     bsClass="container"
     componentClass="div"
     fluid={false}
-    style={
-      Object {
-        "ZIndex": "1",
-        "backgroundColor": "white",
-        "display": "flex",
-        "flex": "1 1 auto",
-        "flexDirection": "column",
-        "float": "left",
-        "height": "190px",
-        "left": "0",
-        "maxWidth": "60%",
-        "position": "absolute",
-        "top": "0",
-        "width": "40%",
-      }
-    }
   >
     <Row
       bsClass="row"
       componentClass="div"
+      style={
+        Object {
+          "ZIndex": "1",
+          "backgroundColor": "white",
+          "borderColor": "white",
+          "color": "grey",
+          "display": "flex",
+          "flexWrap": "column wrap",
+          "float": "left",
+          "font": "400 16px system-ui",
+          "height": "auto",
+          "left": "0",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "paddingTop": "4%",
+          "position": "static",
+          "top": "0",
+          "width": "100%",
+        }
+      }
     >
       <Col
         bsClass="col"
@@ -1419,12 +1691,12 @@ Array [
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1443,12 +1715,12 @@ Array [
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg"
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1467,12 +1739,12 @@ Array [
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1485,33 +1757,41 @@ Array [
       bsClass="label"
       bsStyle="default"
     >
-      Bedroom 1
+      <span>
+         
+        Bedroom 1
+         
+      </span>
     </Label>
   </Grid>,
   <Grid
     bsClass="container"
     componentClass="div"
     fluid={false}
-    style={
-      Object {
-        "ZIndex": "1",
-        "backgroundColor": "white",
-        "display": "flex",
-        "flex": "1 1 auto",
-        "flexDirection": "column",
-        "float": "left",
-        "height": "190px",
-        "left": "0",
-        "maxWidth": "60%",
-        "position": "absolute",
-        "top": "0",
-        "width": "40%",
-      }
-    }
   >
     <Row
       bsClass="row"
       componentClass="div"
+      style={
+        Object {
+          "ZIndex": "1",
+          "backgroundColor": "white",
+          "borderColor": "white",
+          "color": "grey",
+          "display": "flex",
+          "flexWrap": "column wrap",
+          "float": "left",
+          "font": "400 16px system-ui",
+          "height": "auto",
+          "left": "0",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "paddingTop": "4%",
+          "position": "static",
+          "top": "0",
+          "width": "100%",
+        }
+      }
     >
       <Col
         bsClass="col"
@@ -1523,12 +1803,12 @@ Array [
           <img
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1546,12 +1826,12 @@ Array [
           <img
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1569,12 +1849,12 @@ Array [
           <img
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1592,12 +1872,12 @@ Array [
           <img
             style={
               Object {
-                "ZIndex": "1",
-                "borderRadius": "5px",
+                "borderRadius": "10px",
+                "display": "block",
                 "float": "left",
                 "height": "101px",
                 "marginBottom": "10px",
-                "marginRight": "5px",
+                "marginRight": "20px",
                 "position": "static",
                 "width": "101px",
               }
@@ -1610,7 +1890,11 @@ Array [
       bsClass="label"
       bsStyle="default"
     >
-      Bedroom 2
+      <span>
+         
+        Bedroom 2
+         
+      </span>
     </Label>
   </Grid>,
 ]
