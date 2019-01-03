@@ -35,7 +35,7 @@ export default class PhotoModal extends React.Component {
       buttonStyle: style.splashButtonAreaStyle,
       splashButtonStyle: style.splashButtonStyle,
       exploreButtonStyle: style.exploreButtonStyle,
-      splashButtonAreaStyle: style.splashButtonreaAtyle, 
+      splashButtonAreaStyle: style.splashButtonAreaStyle, 
       exploreButtonAreaStyle: style.exploreButtonAreaStyle, 
       displayViewStyle: style.staticNoStyle, 
       displayTourStyle: style.staticNoStyle, 

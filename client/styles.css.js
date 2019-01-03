@@ -46,7 +46,7 @@ const splashImageStyle = {
   'maxWidth': '1082.66px',
   'height': '686px',
   'maxHeight': '686px'
-}
+};
 
 const splashButtonStyle = {
   'position': 'absolute',
