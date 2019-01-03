@@ -32,7 +32,7 @@ var ViewRoomsModal = (props) => {
         <Row style={style.viewRoomsModalRowStyle}>
           {cols}
         </Row>
-        <Label>
+        <Label style={style.viewRoomsModalLabelStyle}>
           <span> {roomName} </span>
         </Label>
       </Grid>
