@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Row, Col, Label} from 'react-bootstrap';
+import {Grid, Row, Col, Label, Thumbnail} from 'react-bootstrap';
 import style from '../../../styles.css.js';
 
 var ViewRoomsModal = (props) => {
@@ -16,11 +16,12 @@ var ViewRoomsModal = (props) => {
 
     for  (let i = imgCount; i < (imgCount + room.numImages); i++) {
       let url =  allUrls[i];
+    //   <div>
+    //   <img style={style.viewRoomsModalImageStyle} src={url} ></img>
+    // </div>
       cols.push(
         <Col xs={6} md={3}>
-          <div>
-            <img style={style.viewRoomsModalImageStyle} src={url} ></img>
-          </div>
+          <img style={style.viewRoomsModalImageStyle} href="#" src={url} />
         </Col>
       )
     }
@@ -28,11 +29,13 @@ var ViewRoomsModal = (props) => {
     imgCount += room.numImages;
 
     return (
-      <Grid style={style.viewRoomsModalContentStyle}>
-        <Row>
+      <Grid fluid>
+        <Row style={style.viewRoomsModalRowStyle}>
           {cols}
         </Row>
-        <Label>{roomName}</Label>
+        <Label>
+          <span> {roomName} </span>
+        </Label>
       </Grid>
     )
   })

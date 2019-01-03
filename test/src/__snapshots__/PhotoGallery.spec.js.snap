@@ -2,11 +2,16 @@
 
 exports[`ImageList should render correctly with data 1`] = `
 <div
+  className="static-gallery"
   style={
     Object {
       "ZIndex": "-1",
       "align": "center",
-      "position": "static",
+      "height": "auto",
+      "marginLeft": "18.71%",
+      "marginTop": "60%",
+      "position": "absolute",
+      "width": "65%",
     }
   }
 >
@@ -18,11 +23,13 @@ exports[`ImageList should render correctly with data 1`] = `
         Object {
           "ZIndex": "-1",
           "color": "grey",
+          "display": "block",
           "font": "400 32px system-ui",
           "fontSize": "30px",
           "marginBottom": "2%",
-          "marginLeft": "20.71%",
-          "position": "static",
+          "marginLeft": "2%",
+          "marginTop": "2%",
+          "position": "relative",
         }
       }
     >
@@ -38,8 +45,8 @@ exports[`ImageList should render correctly with data 1`] = `
         "ZIndex": "-1",
         "display": "flex",
         "font": "400 14px system-ui",
-        "marginLeft": "20.71%",
-        "position": "static",
+        "height": "auto",
+        "position": "relative",
       }
     }
   >
@@ -221,11 +228,16 @@ exports[`ImageList should render correctly with data 1`] = `
 
 exports[`ImageList should render correctly without data 1`] = `
 <div
+  className="static-gallery"
   style={
     Object {
       "ZIndex": "-1",
       "align": "center",
-      "position": "static",
+      "height": "auto",
+      "marginLeft": "18.71%",
+      "marginTop": "60%",
+      "position": "absolute",
+      "width": "65%",
     }
   }
 >
@@ -237,11 +249,13 @@ exports[`ImageList should render correctly without data 1`] = `
         Object {
           "ZIndex": "-1",
           "color": "grey",
+          "display": "block",
           "font": "400 32px system-ui",
           "fontSize": "30px",
           "marginBottom": "2%",
-          "marginLeft": "20.71%",
-          "position": "static",
+          "marginLeft": "2%",
+          "marginTop": "2%",
+          "position": "relative",
         }
       }
     >
@@ -257,8 +271,8 @@ exports[`ImageList should render correctly without data 1`] = `
         "ZIndex": "-1",
         "display": "flex",
         "font": "400 14px system-ui",
-        "marginLeft": "20.71%",
-        "position": "static",
+        "height": "auto",
+        "position": "relative",
       }
     }
   >
@@ -344,7 +358,7 @@ exports[`ImageListEntry should render correctly with data 1`] = `
           "height": "164px",
           "marginLeft": "5px",
           "marginRight": "5px",
-          "position": "static",
+          "position": "relative",
           "width": "246px",
         }
       }
@@ -356,7 +370,7 @@ exports[`ImageListEntry should render correctly with data 1`] = `
           "ZIndex": "-1",
           "marginBottom": "10%",
           "marginLeft": "4px",
-          "position": "static",
+          "position": "relative",
         }
       }
     >
@@ -379,6 +393,22 @@ exports[`PhotoGallery should render correctly 1`] = `
   >
     <div
       className="splash"
+      style={
+        Object {
+          "ZIndex": "-1",
+          "border": "none",
+          "display": "block",
+          "height": "686px",
+          "left": "0",
+          "marginLeft": "33%",
+          "marginTop": "10%",
+          "maxHeight": "686px",
+          "maxWidth": "1082.66px",
+          "position": "absolute",
+          "top": "0",
+          "width": "1082.66px",
+        }
+      }
     >
       <Splash
         imageUrls={Array []}
@@ -416,30 +446,59 @@ exports[`PhotoModal should render correctly with data 1`] = `
 <div
   className="modal-container"
 >
-  <Button
-    active={false}
-    block={false}
-    bsClass="btn"
-    bsStyle="default"
-    disabled={false}
-    onClick={[Function]}
-    style={
-      Object {
-        "backgroundColor": "white",
-        "border": "2px solid lightGrey",
-        "borderRadius": "4px",
-        "float": "right",
-        "font": "400 14px system-ui",
-        "height": "40px",
-        "left": "0",
-        "position": "static",
-        "top": "0",
-        "width": "10%",
-      }
-    }
+  <div
+    className="tour-button"
   >
-    TOUR THIS HOME
-  </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "ZIndex": "-1",
+          "border": "none",
+          "display": "block",
+          "height": "686px",
+          "left": "0",
+          "marginLeft": "33%",
+          "marginTop": "10%",
+          "maxHeight": "686px",
+          "maxWidth": "1082.66px",
+          "position": "absolute",
+          "top": "0",
+          "width": "1082.66px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "background": "lightGrey",
+          "border": "2px solid lightGrey",
+          "borderRadius": "4px",
+          "color": "grey",
+          "display": "block",
+          "float": "right",
+          "font": "400 14px system-ui",
+          "height": "25%",
+          "left": "0",
+          "marginLeft": "87.4%",
+          "marginTop": "47.8%",
+          "position": "absolute",
+          "textAlign": "center",
+          "top": "0",
+          "width": "10%",
+        }
+      }
+    >
+      <p>
+         TOUR THIS HOME 
+      </p>
+    </div>
+  </div>
   <Button
     active={false}
     block={false}
@@ -448,15 +507,6 @@ exports[`PhotoModal should render correctly with data 1`] = `
     bsStyle="primary"
     disabled={false}
     onClick={[Function]}
-    style={
-      Object {
-        "border": "none",
-        "color": "#a61d55",
-        "font": "400 18px system-ui",
-        "marginLeft": "20.71%",
-        "position": "static",
-      }
-    }
   >
     Explore all 
     3
@@ -501,11 +551,18 @@ exports[`PhotoModal should render correctly with data 1`] = `
         "state": Object {
           "buttonContent": "",
           "buttonStyle": Object {
+            "ZIndex": "-1",
             "border": "none",
-            "color": "#a61d55",
-            "font": "400 18px system-ui",
-            "marginLeft": "20.71%",
-            "position": "static",
+            "display": "block",
+            "height": "686px",
+            "left": "0",
+            "marginLeft": "33%",
+            "marginTop": "10%",
+            "maxHeight": "686px",
+            "maxWidth": "1082.66px",
+            "position": "absolute",
+            "top": "0",
+            "width": "1082.66px",
           },
           "displayStyle": Object {
             "display": "none",
@@ -516,7 +573,41 @@ exports[`PhotoModal should render correctly with data 1`] = `
           "displayViewStyle": Object {
             "display": "none",
           },
+          "exporeButtonStyle": Object {
+            "background": "none",
+            "border": "none",
+            "borderRadius": "4px",
+            "color": "#a61d55",
+            "display": "block",
+            "float": "right",
+            "font": "400 14px system-ui",
+            "height": "225%",
+            "left": "0",
+            "marginLeft": "18.71%",
+            "marginTop": "47.8%",
+            "position": "absolute",
+            "textAlign": "center",
+            "top": "0",
+            "width": "10%",
+          },
           "show": false,
+          "tourButtonStyle": Object {
+            "background": "lightGrey",
+            "border": "2px solid lightGrey",
+            "borderRadius": "4px",
+            "color": "grey",
+            "display": "block",
+            "float": "right",
+            "font": "400 14px system-ui",
+            "height": "25%",
+            "left": "0",
+            "marginLeft": "87.4%",
+            "marginTop": "47.8%",
+            "position": "absolute",
+            "textAlign": "center",
+            "top": "0",
+            "width": "10%",
+          },
           "tourRoomsPage": false,
           "viewAllPage": false,
         },
@@ -559,30 +650,59 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "_rendered": <div
               className="modal-container"
             >
-              <Button
-                active={false}
-                block={false}
-                bsClass="btn"
-                bsStyle="default"
-                disabled={false}
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "white",
-                    "border": "2px solid lightGrey",
-                    "borderRadius": "4px",
-                    "float": "right",
-                    "font": "400 14px system-ui",
-                    "height": "40px",
-                    "left": "0",
-                    "position": "static",
-                    "top": "0",
-                    "width": "10%",
-                  }
-                }
+              <div
+                className="tour-button"
               >
-                TOUR THIS HOME
-              </Button>
+                <Button
+                  active={false}
+                  block={false}
+                  bsClass="btn"
+                  bsStyle="default"
+                  disabled={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "ZIndex": "-1",
+                      "border": "none",
+                      "display": "block",
+                      "height": "686px",
+                      "left": "0",
+                      "marginLeft": "33%",
+                      "marginTop": "10%",
+                      "maxHeight": "686px",
+                      "maxWidth": "1082.66px",
+                      "position": "absolute",
+                      "top": "0",
+                      "width": "1082.66px",
+                    }
+                  }
+                />
+                <div
+                  style={
+                    Object {
+                      "background": "lightGrey",
+                      "border": "2px solid lightGrey",
+                      "borderRadius": "4px",
+                      "color": "grey",
+                      "display": "block",
+                      "float": "right",
+                      "font": "400 14px system-ui",
+                      "height": "25%",
+                      "left": "0",
+                      "marginLeft": "87.4%",
+                      "marginTop": "47.8%",
+                      "position": "absolute",
+                      "textAlign": "center",
+                      "top": "0",
+                      "width": "10%",
+                    }
+                  }
+                >
+                  <p>
+                     TOUR THIS HOME 
+                  </p>
+                </div>
+              </div>
               <Button
                 active={false}
                 block={false}
@@ -591,15 +711,6 @@ exports[`PhotoModal should render correctly with data 1`] = `
                 bsStyle="primary"
                 disabled={false}
                 onClick={[Function]}
-                style={
-                  Object {
-                    "border": "none",
-                    "color": "#a61d55",
-                    "font": "400 18px system-ui",
-                    "marginLeft": "20.71%",
-                    "position": "static",
-                  }
-                }
               >
                 Explore all 
                 3
@@ -646,7 +757,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     "overflow": "scroll",
                     "paddingLeft": "20.71%",
                     "paddingTop": "7%",
-                    "position": "static",
+                    "position": "absolute",
                     "top": "0",
                     "width": "110%",
                   }
@@ -658,7 +769,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   closeLabel="Close"
                   style={
                     Object {
-                      "ZIndex": "2",
+                      "ZIndex": "1",
                       "backgroundColor": "white",
                       "borderBottom": "1px solid lightGrey",
                       "height": "70px",
@@ -842,7 +953,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
         "overflow": "scroll",
         "paddingLeft": "20.71%",
         "paddingTop": "7%",
-        "position": "static",
+        "position": "absolute",
         "top": "0",
         "width": "110%",
       }
@@ -854,7 +965,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
       closeLabel="Close"
       style={
         Object {
-          "ZIndex": "2",
+          "ZIndex": "1",
           "backgroundColor": "white",
           "borderBottom": "1px solid lightGrey",
           "height": "70px",
@@ -1002,25 +1113,17 @@ exports[`Splash should render correctly with data 1`] = `
   className="splash"
   id="splash-image"
 >
-  <div>
-    <img
-      src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
-      style={
-        Object {
-          "ZIndex": "-1",
-          "display": "inline-block",
-          "float": "right",
-          "height": "686px",
-          "marginBottom": "10%",
-          "marginLeft": "500px",
-          "marginRight": "1%",
-          "marginTop": "80px",
-          "position": "relative",
-          "width": "1082.66px",
-        }
+  <img
+    src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
+    style={
+      Object {
+        "height": "686px",
+        "maxHeight": "686px",
+        "maxWidth": "1082.66px",
+        "width": "1082.66px",
       }
-    />
-  </div>
+    }
+  />
 </div>
 `;
 
@@ -1295,7 +1398,7 @@ Array [
         "height": "190px",
         "left": "0",
         "maxWidth": "60%",
-        "position": "static",
+        "position": "absolute",
         "top": "0",
         "width": "40%",
       }
@@ -1400,7 +1503,7 @@ Array [
         "height": "190px",
         "left": "0",
         "maxWidth": "60%",
-        "position": "static",
+        "position": "absolute",
         "top": "0",
         "width": "40%",
       }

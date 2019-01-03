@@ -7,10 +7,19 @@ const staticStyle = {
 };
 
 const buttonShowStyle = {
-  'position': 'static',
-  'marginLeft': '20.71%',
-  'font': '400 18px system-ui',
-  'color': '#a61d55',
+  'display': 'block',
+  'width': '1082.66px',
+  'maxWidth': '1082.66px',
+  'height': '686px',
+  'maxHeight': '686px',
+  'position': 'absolute',
+  'top': '0',
+  'left': '0',
+  // 'float': 'right',
+  'marginLeft': '33%',
+  'marginTop': '10%',
+  'ZIndex': '-1',
+  'background': 'none',
   'border': 'none'
 };
 
@@ -19,54 +28,115 @@ const buttonHideStyle = {
 };
 
 const splashStyle = {
-  'display': 'inline-block',
+  'display': 'block',
   'width': '1082.66px',
+  'maxWidth': '1082.66px',
   'height': '686px',
-  'position': 'relative',
-  'float': 'right',
-  'marginRight': '1%',
-  'marginTop': '80px',
-  'marginBottom': '10%',
-  'marginLeft': '500px',
+  'maxHeight': '686px',
+  'position': 'absolute',
+  'top': '0',
+  'left': '0',
+  // 'float': 'right',
+  'border': 'none',
+  'marginLeft': '33%',
+  'marginTop': '10%',
   'ZIndex': '-1',
 };
 
-const titleStyle = {
-  'position': 'static',
-  'fontSize': '30px',
-  'marginLeft': '20.71%',
+const splashImageStyle = {
+  'width': '1082.66px',
+  'maxWidth': '1082.66px',
+  'height': '686px',
+  'maxHeight': '686px'
+}
+
+const splashButtonStyle = {
+  'position': 'absolute',
+  'display': 'block',
+  'top': '0',
+  'left': '0',
+  'width': '10%',
+  'height': '4%',
+  'paddingTop': '0.6%',
+  'font': '400 14px system-ui',
+  'color': 'grey',
+  'float': 'right',
+  'marginLeft': '87.4%',
   'ZIndex': '-1',
+  'marginTop': '38.6%',
+  'textAlign': 'center',
+  'borderRadius': '4px',
+  'background': 'lightGrey',
+  'border': '2px solid lightGrey',
+};
+
+const splashButtonAreaStyle = {
+  'background': 'none',
+  'display': 'block',
+  'width': '1082.66px',
+  'maxWidth': '1082.66px',
+  'height': '686px',
+  'maxHeight': '686px',
+  'position': 'relative',
+  'ZIndex': '-1',
+  'border': 'none',
+  'background': 'none',
+  // 'float': 'right',
+  'border': 'none',
+  'marginLeft': '33%',
+  'marginTop': '10%',
+  // 'marginLeft': '87.4%',
+  // 'marginRight': '.1%',
+  // 'marginLeft': '33%',
+  // 'marginTop': '20%',
+  // 'marginBottom': '10%',
+};
+
+const titleStyle = {
+  'position': 'relative',
+  'fontSize': '30px',
+  'marginLeft': '2%',
+  'marginTop': '2%',
+  'ZIndex': '-1',
+  'display': 'block',
   'marginBottom': '2%',
   'font': '400 32px system-ui',
   'color': 'grey'
 };
 
 const listTableStyle = {
+  'display': 'grid',
+  'position': 'absolute',
   'display': 'flex',
-  'position': 'static',
-  'marginLeft': '20.71%',
+  // 'marginLeft': '20.71%',
+  'height': 'auto',
   'ZIndex': '-1',
   'font': '400 14px system-ui'
 };
 
 const staticGalleryStyle = {
-  'position': 'static',
+  'position': 'absolute',
   'ZIndex': '-1',
   'align': 'center',
+  'marginLeft': '18.71%',
+  'marginTop': '50%',
+  'marginBottom': '30%',
+  'width': '65%',
+  'height': 'auto',
 };
 
 
 const listImageStyle = {
   'width': '246px',
   'height': '164px',
-  'position': 'static',
+  'position': 'relative',
   'marginLeft': '5px',
   'marginRight': '5px',
   'ZIndex': '-1',
 };
 
 const roomLabelStyle = {
-  'position': 'static',
+  'position': 'relative',
   'marginLeft': '4px',
   'marginBottom': '10%',
   'ZIndex': '-1',
@@ -74,6 +144,42 @@ const roomLabelStyle = {
 
 const viewRoomsModalStyle = {
   'display': 'grid',
+  'display': 'inline-block',
+  // 'gridAutoFlow': 'rows',
+  // 'flex': '25%',
+  // 'flexFlow': 'row wrap',
+  // 'flexDirection': 'row',
+  // 'flexWrap': 'wrap',
+  'position': 'absolute',
+  'background': 'none',
+  'ZIndex': '1',
+  'left': '0',
+  'top': '0',
+  // 'gridAutoFlow': 'row',
+  // 'flexDirection': 'rows',
+  // 'flexWrap': 'wrap',
+  'borderColor': 'white',
+  'overflow': 'scroll',
+  'float': 'left',
+  'width': '80%',
+  'maxWidth': '80%',
+  'height': 'auto',
+  'minHeight': '100%',
+  'paddingTop': '7%',
+  'paddingLeft': '10.71%',
+  'font': '400 16px system-ui'
+};
+
+
+
+const viewRoomsModalRowStyle = {
+  // 'display': 'flex',
+  'display': 'row',
+  // 'gridAutoFlow': 'rows',
+  // 'flex': '1 1 auto',
+  // 'flexFlow': 'row wrap',
+  // 'flexDirection': 'row',
+  // 'flexWrap': 'wrap',
   'position': 'static',
   'backgroundColor': 'white',
   'ZIndex': '1',
@@ -85,41 +191,48 @@ const viewRoomsModalStyle = {
   'borderColor': 'white',
   'overflow': 'scroll',
   'float': 'left',
-  'width': '110%',
-  'maxWidth': '110%',
-  'height': '100%',
+  'width': '100%',
+  'maxWidth': '100%',
+  'height': 'auto',
   'minHeight': '100%',
-  'paddingTop': '7%',
-  'paddingLeft': '20.71%',
+  'paddingTop': '1%',
+  // 'paddingLeft': '10.71%',
   'font': '400 16px system-ui'
 };
 
-const viewRoomsModalContentStyle = {
-  'display': 'flex',
-  'flex': '1 1 auto',
+const viewRoomsModalColStyle = {
+  'display': 'inline-block',
+  //  'flex': '25%',
+  // 'boxSizing': 'border-box',
+  // 'horizontalAlign': 'middle',
+  // 'gridAutoFlow': 'rows',
+  // 'flex': '25%',
   // 'flexFlow': 'row wrap',
-  'flexDirection': 'column',
+  // 'flexDirection': 'row',
   // 'flexWrap': 'wrap',
-  'position': 'static',
+  'position': 'relative',
   'backgroundColor': 'white',
   'ZIndex': '1',
   'top': '0',
   'left': '0',
   'float': 'left',
-  'width': '40%',
-  'maxWidth': '60%',
+  'width': '10%',
+  'maxWidth': '40%',
   'height': '190px',
+  'maxHeight': '190px'
 };
 
 const viewRoomsModalImageStyle = {
   'width': '101px',
   'height': '101px',
+  'display': 'block',
   'float': 'left',
-  'borderRadius': '5px',
-  'ZIndex': '1',
+  // 'borderRadius': '5px',
+  // 'ZIndex': '1',
   'position': 'static',
-  'marginBottom': '10px',
-  'marginRight': '5px'
+  'margin': '5px',
+  // 'marginBottom': '5px',
+  // 'marginRight': '5px'
 };
 
 const modalNavStyle = {
@@ -151,7 +264,7 @@ const changeModalButtonStyle = {
 
 const tourRoomsModalStyle = {
   'display': 'grid',
-  'position': 'static',
+  'position': 'absolute',
   'backgroundColor': 'white',
   'ZIndex': '1',
   'left': '0',
@@ -204,6 +317,42 @@ const tourRoomsModalImageStyle = {
   'marginRight': '5px'
 };
 
+const exploreButtonStyle = {
+  'position': 'absolute',
+  'display': 'block',
+  'top': '0',
+  'left': '0',
+  'width': '10%',
+  'height': '5%',
+  'font': '400 14px system-ui',
+  'color': '#a61d55',
+  'float': 'left',
+  'marginLeft': '18.21%',
+  'marginTop': '124.8%',
+  // 'marginBottom': '5%',
+  'textAlign': 'center',
+  'borderRadius': '4px',
+  'background': 'none',
+  'ZIndex': '-1',
+  'border': 'none',
+};
+
+const exploreButtonAreaStyle = {
+  'position': 'absolute',
+  'display': 'block',
+  'top': '0',
+  'left': '0',
+  'width': '10%',
+  'height': '5%',
+  // 'float': 'right',
+  'marginLeft': '18.21%',
+  'marginTop': '124.8%',
+  'borderRadius': '4px',
+  'background': 'none',
+  'ZIndex': '-1',
+  'border': 'none',
+};
+
 const modalViewButtonStyle = {
   'position': 'relative',
   'display': 'flex',
@@ -214,23 +363,6 @@ const modalViewButtonStyle = {
   'height': '40px',
   'marginTop': '15px',
   'marginLeft': '20.90%',
-  'font': '400 14px system-ui',
-  'borderRadius': '4px',
-  'border': '2px solid lightGrey'
-};
-
-const splashButtonStyle = {
-  'position': 'static',
-  // 'display': 'inline-block',
-  'backgroundColor': 'white',
-  'float': 'right',
-  'top': '0',
-  'left': '0',
-  'width': '10%',
-  'height': '40px',
-  // 'marginTop': '15px',
-  // 'marginRight': '10%',
-  // 'marginBottom': '80%',
   'font': '400 14px system-ui',
   'borderRadius': '4px',
   'border': '2px solid lightGrey'
@@ -254,13 +386,15 @@ const backButtonStyle = {
 
 export default {
   splashStyle,
+  splashImageStyle,
   listTableStyle,
   listImageStyle,
   titleStyle,
   roomLabelStyle,
   staticGalleryStyle,
   viewRoomsModalStyle,
-  viewRoomsModalContentStyle,
+  viewRoomsModalRowStyle,
+  viewRoomsModalColStyle,
   viewRoomsModalImageStyle,
   staticNoStyle,
   staticStyle,
@@ -271,6 +405,10 @@ export default {
   tourRoomsModalStyle,
   tourRoomsModalContentStyle,
   tourRoomsModalImageStyle,
+  exploreButtonStyle,
+  exploreButtonAreaStyle,
+  modalViewButtonStyle,
   splashButtonStyle,
-  backButtonStyle
+  splashButtonAreaStyle,
+  backButtonStyle,
 };
