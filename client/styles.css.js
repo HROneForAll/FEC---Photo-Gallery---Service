@@ -59,7 +59,7 @@ const splashButtonStyle = {
   'width': '10%',
   'height': '4%',
   'paddingTop': '0.6%',
-  'font': '400 12px system-ui',
+  'font': '400 14px system-ui',
   'color': '#484848',
   'float': 'right',
   'marginLeft': '86.4%',
@@ -85,13 +85,14 @@ const splashButtonAreaStyle = {
   'border': 'none',
   'marginLeft': '33%',
   'marginTop': '10%',
+  'outline': 'none'
 };
 
 const titleStyle = {
   'position': 'relative',
   'fontSize': '30px',
   'textRendering': 'optimizelegibility',
-  'marginLeft': '1%',
+  'marginLeft': '0.4%',
   'marginTop': '2%',
   'ZIndex': '-1',
   'display': 'block',
@@ -253,7 +254,8 @@ const changeModalButtonStyle = {
   'color': '#484848',
   'font': '400 14px system-ui',
   'borderRadius': '4px',
-  'border': '2px solid lightGrey'
+  'border': '2px solid lightGrey',
+  'outline': 'none'
 };
 
 const tourRoomsModalStyle = {
@@ -344,6 +346,7 @@ const exploreButtonStyle = {
   'background': 'none',
   'ZIndex': '-1',
   'border': 'none',
+  'outline': 'none'
 };
 
 const exploreButtonAreaStyle = {
@@ -374,7 +377,8 @@ const modalViewButtonStyle = {
   'marginLeft': '20.90%',
   'font': '400 14px system-ui',
   'borderRadius': '4px',
-  'border': '2px solid lightGrey'
+  'border': '2px solid lightGrey',
+  'outline': 'none'
 };
 
 const backButtonStyle = {
@@ -392,6 +396,7 @@ const backButtonStyle = {
   'width': '40px',
   'marginTop': '15px',
   'marginLeft': '2%',
+  'outline': 'none'
 };
 
 export default {
