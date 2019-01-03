@@ -347,6 +347,8 @@ const exploreButtonStyle = {
   'background': 'none',
   'ZIndex': '-1',
   'border': 'none',
+  'cursor': 'pointer',
+  'textDecoration': 'none',
   'outline': 'none'
 };
 

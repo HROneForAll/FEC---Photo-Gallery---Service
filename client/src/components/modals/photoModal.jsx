@@ -12,7 +12,7 @@ export default class PhotoModal extends React.Component {
 
     this.handleViewOpen = this.handleViewOpen.bind(this);
     this.handleTourOpen = this.handleTourOpen.bind(this);
-    
+    this.buttonRef = React.createRef();
     this.state = {
       show: false,
       displayStyle: this.props.displayStyle,
@@ -104,9 +104,64 @@ export default class PhotoModal extends React.Component {
         <div className='explore-button'>
           <Button
             style={this.state.exploreButtonStyle}
+            ref={this.buttonRef}
             bsStyle="primary"
             bsSize="large"
             onClick={() => this.handleViewOpen()}
+            onMouseOver={() => {
+              this.setState({
+                exploreButtonStyle: {
+                  'position': 'absolute',
+                  'display': 'block',
+                  'top': '0',
+                  'left': '0',
+                  'width': '12%',
+                  'height': '5%',
+                  'textRendering': 'optimizelegibility',
+                  'font': '400 18px system-ui',
+                  'color': '#a61d55',
+                  'float': 'left',
+                  'marginBottom': '3%',
+                  'marginLeft': '19.71%',
+                  'marginTop': '126.8%',
+                  'textAlign': 'left',
+                  'borderRadius': '4px',
+                  'background': 'none',
+                  'ZIndex': '-1',
+                  'border': 'none',
+                  'cursor': 'pointer',
+                  'textDecoration': 'underline',
+                  'outline': 'none'
+                }
+              })}
+            }
+            onMouseOut={() => {
+              this.setState({
+                exploreButtonStyle: {
+                  'position': 'absolute',
+                  'display': 'block',
+                  'top': '0',
+                  'left': '0',
+                  'width': '12%',
+                  'height': '5%',
+                  'textRendering': 'optimizelegibility',
+                  'font': '400 18px system-ui',
+                  'color': '#a61d55',
+                  'float': 'left',
+                  'marginBottom': '3%',
+                  'marginLeft': '19.71%',
+                  'marginTop': '126.8%',
+                  'textAlign': 'left',
+                  'borderRadius': '4px',
+                  'background': 'none',
+                  'ZIndex': '-1',
+                  'border': 'none',
+                  'cursor': 'pointer',
+                  'textDecoration': 'none',
+                  'outline': 'none'
+                }
+              })}
+            }
           >
             Explore all {this.props.imageUrls.length} photos
           </Button>
