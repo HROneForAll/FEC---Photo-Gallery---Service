@@ -16,9 +16,6 @@ var ViewRoomsModal = (props) => {
 
     for  (let i = imgCount; i < (imgCount + room.numImages); i++) {
       let url =  allUrls[i];
-    //   <div>
-    //   <img style={style.viewRoomsModalImageStyle} src={url} ></img>
-    // </div>
       cols.push(
         <Col xs={6} md={3}>
           <div>
