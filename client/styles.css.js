@@ -261,7 +261,7 @@ const tourRoomsModalContentStyle = {
   'top': '0',
   'left': '0',
   'float': 'left',
-  'width': '66%',
+  'width': '67%',
   'marginRight': '0.2%',
   'marginTop': '1%',
   'marginBottom': '1%',
@@ -284,7 +284,7 @@ const tourRoomsModalImageStyle = {
 };
 
 const tourRoomsModalLabelStyle = {
-  'width': '64.5%',
+  'width': '64.35%',
   'float': 'left',
   'display': 'block',
   'ZIndex': '1',
