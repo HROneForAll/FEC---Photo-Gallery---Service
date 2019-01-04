@@ -10,7 +10,7 @@ var ImageListEntry = (props) => {
   return (
     <div className='tour-entry'>
       <div className='tour_image'>
-        <img style={style.listImageStyle} src={url}></img>
+        <img href={'#' + roomName} style={style.listImageStyle} src={url}></img>
         <div style={style.roomLabelStyle} className='room-label'>
           <span>{roomName}</span>
       </div>
