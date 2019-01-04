@@ -47,7 +47,7 @@ const splashImageStyle = {
   'maxWidth': '1082.66px',
   'height': '686px',
   'maxHeight': '686px',
-  'borderRadius': '5px'
+  'borderRadius': '5px',
 };
 
 const splashButtonStyle = {
@@ -59,7 +59,7 @@ const splashButtonStyle = {
   'width': '10%',
   'height': '4%',
   'paddingTop': '0.6%',
-  'font': '400 14px system-ui',
+  'font': '800 14px system-ui',
   'color': '#484848',
   'float': 'right',
   'marginLeft': '86.4%',
@@ -68,24 +68,25 @@ const splashButtonStyle = {
   'textAlign': 'center',
   'borderRadius': '4px',
   'background': 'lightGrey',
-  'border': '1px solid lightGrey',
+  'cursor': 'pointer'
 };
 
 const splashButtonAreaStyle = {
   'background': 'none',
   'display': 'block',
-  'width': '1082.66px',
-  'maxWidth': '1082.66px',
+  'width': '1083.66px',
+  'maxWidth': '1092.66px',
   'height': '686px',
   'maxHeight': '686px',
-  'position': 'relative',
+  'position': 'static',
   'ZIndex': '-1',
   'border': 'none',
   'background': 'none',
   'border': 'none',
   'marginLeft': '33%',
   'marginTop': '10%',
-  'outline': 'none'
+  'outline': 'none',
+  'cursor': 'crosshair'
 };
 
 const titleStyle = {
@@ -96,8 +97,9 @@ const titleStyle = {
   'ZIndex': '-1',
   'display': 'block',
   'marginBottom': '6%',
-  'font': '400 28px system-ui',
-  'color': '#484848'
+  'font': '800 28px system-ui',
+  'color': '#484848',
+  'cursor': 'default'
 };
 
 const listTableStyle = {
@@ -130,7 +132,8 @@ const listImageStyle = {
   'marginLeft': '5px',
   'marginRight': '5px',
   'ZIndex': '-1',
-  'borderRadius': '5px'
+  'borderRadius': '5px',
+  'cursor': 'crosshair'
 };
 
 const roomLabelStyle = {
@@ -139,8 +142,9 @@ const roomLabelStyle = {
   'marginLeft': '4px',
   'marginBottom': '10%',
   'ZIndex': '-1',
-  'color': 'grey',
-  'font': '400 16px system-ui'
+  'color': '#484848',
+  'font': '600 16px system-ui',
+  'cursor': 'default'
 };
 
 const viewRoomsModalStyle = {
@@ -156,10 +160,11 @@ const viewRoomsModalStyle = {
   'float': 'left',
   'width': '80%',
   'maxWidth': '80%',
-  'height': 'auto',
+  'height': '80%',
   'minHeight': '100%',
   'paddingTop': '2%',
   'paddingBottom': '2%',
+  'animation': 'slideUp .5s linear'
 };
 
 const viewRoomsModalLabelStyle = {
@@ -176,9 +181,10 @@ const viewRoomsModalLabelStyle = {
   'minHeight': '100%',
   'paddingBottom': '0.2%',
   'marginLeft': '22.8%',
-  'font': '400 20px system-ui',
+  'font': '500 20px system-ui',
   'color': '#484848',
   'borderBottom': '1px solid lightGrey',
+  'cursor': 'default',
 };
 
 
@@ -228,6 +234,7 @@ const viewRoomsModalImageStyle = {
   'marginRight': '20px',
   'marginBottom': '10px',
   'borderRadius': '10px',
+  'cursor': 'crosshair'
 };
 
 const modalNavStyle = {
@@ -253,10 +260,11 @@ const changeModalButtonStyle = {
   'marginTop': '15px',
   'marginLeft': '18.5%',
   'color': '#484848',
-  'font': '400 14px system-ui',
+  'font': '500 14px system-ui',
   'borderRadius': '4px',
   'border': '2px solid lightGrey',
-  'outline': 'none'
+  'outline': 'none',
+  'cursor': 'pointer',
 };
 
 const tourRoomsModalStyle = {
@@ -272,8 +280,8 @@ const tourRoomsModalStyle = {
   'float': 'left',
   'width': '100%',
   'maxWidth': '100%',
-  'height': '100%',
-  'minHeight': '100%',
+  'height': '0%',
+  'maxHeight': '100%',
   'marginTop': '3.5%',
 };
 
@@ -300,18 +308,22 @@ const tourRoomsModalContentStyle = {
   'maxWidth': '67%',
   'height': '550px',
   'maxHeight': '750px',
+  'cursor': 'ns-resize'
 };
 
 const tourRoomsModalImageStyle = {
-  'display': 'block',
+  'display': 'flex',
   'width': '525px',
-  'height': '350px',
+  'maxWidth': '800px',
+  'height': 'auto',
+  'maxHeight': '540px',
   'float': 'left',
   'borderRadius': '5px',
   'ZIndex': '1',
   'position': 'static',
   'marginRight': '20px',
-  'marginTop': '5%'
+  'marginTop': '5%',
+  'cursor': 'pointer'
 };
 
 const tourRoomsModalLabelStyle = {
@@ -325,7 +337,8 @@ const tourRoomsModalLabelStyle = {
   'marginLeft': '18%',
   'color': '#484848',
   'borderBottom': '1px solid lightGrey',
-  'font': '400 36px system-ui'
+  'font': '400 36px system-ui',
+  'cursor': 'default'
 };
 
 const exploreButtonStyle = {
@@ -336,7 +349,7 @@ const exploreButtonStyle = {
   'width': '12%',
   'height': '5%',
   'textRendering': 'optimizelegibility',
-  'font': '400 18px system-ui',
+  'font': '500 18px system-ui',
   'color': '#a61d55',
   'float': 'left',
   'marginBottom': '3%',
@@ -349,7 +362,7 @@ const exploreButtonStyle = {
   'border': 'none',
   'cursor': 'pointer',
   'textDecoration': 'none',
-  'outline': 'none'
+  'outline': 'none',
 };
 
 const exploreButtonAreaStyle = {
@@ -381,7 +394,8 @@ const modalViewButtonStyle = {
   'font': '400 14px system-ui',
   'borderRadius': '4px',
   'border': '2px solid lightGrey',
-  'outline': 'none'
+  'outline': 'none',
+  'cursor': 'pointer',
 };
 
 const backButtonStyle = {
@@ -399,7 +413,8 @@ const backButtonStyle = {
   'width': '40px',
   'marginTop': '15px',
   'marginLeft': '2%',
-  'outline': 'none'
+  'outline': 'none',
+  'cursor': 'pointer',
 };
 
 export default {

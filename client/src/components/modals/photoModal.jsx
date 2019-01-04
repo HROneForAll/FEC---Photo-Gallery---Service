@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal,Button } from 'react-bootstrap';
+import { Modal,Button,Collapse } from 'react-bootstrap';
 import style from '../../../styles.css';
 import ViewRoomsModal from './viewRoomsModal.jsx';
 import TourRoomsModal from './tourRoomsModal.jsx';
@@ -12,12 +12,15 @@ export default class PhotoModal extends React.Component {
 
     this.handleViewOpen = this.handleViewOpen.bind(this);
     this.handleTourOpen = this.handleTourOpen.bind(this);
+    this.handleImageOpen = this.handleImageOpen.bind(this);
     this.buttonRef = React.createRef();
+
     this.state = {
       show: false,
+      open: false,
       displayStyle: this.props.displayStyle,
-      displayViewStyle: style.tourRoomsModalStyle,
-      displayTourStyle: style.viewRoomsModalStyle,
+      displayViewStyle: style.viewRoomsModalStyle,
+      displayTourStyle: style.tourRoomsModalStyle,
       splashButtonStyle: style.splashButtonStyle,
       exploreButtonStyle: style.exploreButtonStyle,
       splashButtonAreaStyle: style.splashButtonAreaStyle, 
@@ -29,7 +32,7 @@ export default class PhotoModal extends React.Component {
   }
 
   handleClose() {
-    this.props.handleClose()
+    this.props.handleClose();
     this.setState({ 
       show: false,
       buttonStyle: style.splashButtonAreaStyle,
@@ -45,7 +48,8 @@ export default class PhotoModal extends React.Component {
   }
 
   handleTourOpen() {
-    this.props.handleOpen()
+    this.props.handleOpen();
+    window.scrollTo(0, 0);
     this.setState({ 
       show: true, 
       buttonStyle: style.staticNoStyle, 
@@ -63,7 +67,8 @@ export default class PhotoModal extends React.Component {
   }
 
   handleViewOpen() {
-    this.props.handleOpen()
+    this.props.handleOpen();
+    window.scrollTo(0, 0);
     this.setState({ 
       show: true, 
       buttonStyle: style.staticNoStyle,
@@ -88,6 +93,10 @@ export default class PhotoModal extends React.Component {
     }
   }
 
+  handleImageOpen(url) {
+    window.open(url);
+  }
+
   render() {
     return (
       <div className='modal-container'>
@@ -97,6 +106,7 @@ export default class PhotoModal extends React.Component {
             onClick={() => this.handleTourOpen()}
             >
           </Button>
+          &nbsp;
           <div onClick={() => this.handleTourOpen()} style={this.state.splashButtonStyle}>
             <span> TOUR THIS HOME </span> 
           </div>
@@ -118,7 +128,7 @@ export default class PhotoModal extends React.Component {
                   'width': '12%',
                   'height': '5%',
                   'textRendering': 'optimizelegibility',
-                  'font': '400 18px system-ui',
+                  'font': '600 18px system-ui',
                   'color': '#a61d55',
                   'float': 'left',
                   'marginBottom': '3%',
@@ -145,7 +155,7 @@ export default class PhotoModal extends React.Component {
                   'width': '12%',
                   'height': '5%',
                   'textRendering': 'optimizelegibility',
-                  'font': '400 18px system-ui',
+                  'font': '500 18px system-ui',
                   'color': '#a61d55',
                   'float': 'left',
                   'marginBottom': '3%',
@@ -182,9 +192,13 @@ export default class PhotoModal extends React.Component {
                 onClick={() => this.handleClose()}>
                   <i class="fas fa-arrow-circle-left"></i>
                 </Button>
+                &nbsp;
                 <Button 
                 style={style.changeModalButtonStyle}
-                onClick={() => this.handleModalChange()}
+                onClick={() => {
+                  this.setState({ open: !this.state.open })
+                  this.handleModalChange()
+                }}
                 >
                   {this.state.buttonContent}
                 </Button>
@@ -196,7 +210,7 @@ export default class PhotoModal extends React.Component {
               <ViewRoomsModal displayStyle={this.state.displayViewStyle} className='view-rooms-modal' rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
             <div style={this.state.displayTourStyle}className='tour-rooms-modal'>
-              <TourRoomsModal displayStyle={this.state.displayTourStyle} rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
+              <TourRoomsModal handleImageOpen={(url) => this.handleImageOpen(url)} displayStyle={this.state.displayTourStyle} rooms={this.props.rooms} imageUrls={this.props.imageUrls} />
             </div>
           </Modal.Body>
         </Modal>

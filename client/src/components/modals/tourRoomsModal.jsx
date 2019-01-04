@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Row, Col, Label} from 'react-bootstrap';
+import {Grid, Row, Col, Label, Image} from 'react-bootstrap';
 import style from '../../../styles.css.js';
 
 var TourRoomsModal = (props) => {
@@ -20,7 +20,7 @@ var TourRoomsModal = (props) => {
       cols.push(
         <Row xs={6} md={3}>
           <div>
-            <img style={style.tourRoomsModalImageStyle} src={url} ></img>
+            <Image onClick={() => props.handleImageOpen(url)} style={style.tourRoomsModalImageStyle} src={url} responsive/>
           </div>
         </Row>
       )
@@ -30,7 +30,7 @@ var TourRoomsModal = (props) => {
 
     return (
       <Grid>
-        <Label style={style.tourRoomsModalLabelStyle} >{roomName}</Label>
+        <Label id={roomName} style={style.tourRoomsModalLabelStyle} >{roomName}</Label>
         <Col style={style.tourRoomsModalContentStyle}>
           {cols}
         </Col>
