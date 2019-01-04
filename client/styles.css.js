@@ -162,7 +162,7 @@ const viewRoomsModalStyle = {
   'maxWidth': '80%',
   'height': '80%',
   'minHeight': '100%',
-  'paddingTop': '2%',
+  'paddingTop': '1%',
   'paddingBottom': '2%',
   'animation': 'slideUp .5s linear'
 };
@@ -243,6 +243,7 @@ const modalNavStyle = {
   'backgroundColor': 'white',
   'width': '100%',
   'ZIndex': '1',
+  'marginBottom': '1%',
   'borderBottom': '1px solid lightGrey',
   'height': '70px',
   'left': '0',
@@ -282,7 +283,7 @@ const tourRoomsModalStyle = {
   'maxWidth': '100%',
   'height': '0%',
   'maxHeight': '100%',
-  'marginTop': '3.5%',
+  'marginTop': '2.5%',
 };
 
 const tourRoomsModalContentStyle = {
@@ -337,7 +338,7 @@ const tourRoomsModalLabelStyle = {
   'marginLeft': '18%',
   'color': '#484848',
   'borderBottom': '1px solid lightGrey',
-  'font': '400 36px system-ui',
+  'font': '600 36px system-ui',
   'cursor': 'default'
 };
 

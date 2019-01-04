@@ -128,7 +128,7 @@ export default class PhotoModal extends React.Component {
                   'width': '12%',
                   'height': '5%',
                   'textRendering': 'optimizelegibility',
-                  'font': '600 18px system-ui',
+                  'font': '500 18px system-ui',
                   'color': '#a61d55',
                   'float': 'left',
                   'marginBottom': '3%',
