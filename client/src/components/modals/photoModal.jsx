@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal,Button,Collapse } from 'react-bootstrap';
+import { Modal, Button, Collapse } from 'react-bootstrap';
 import style from '../../../styles.css';
 import ViewRoomsModal from './viewRoomsModal.jsx';
 import TourRoomsModal from './tourRoomsModal.jsx';

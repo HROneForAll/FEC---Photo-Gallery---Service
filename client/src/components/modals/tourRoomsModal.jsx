@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Row, Col, Label, Image} from 'react-bootstrap';
+import { Grid, Row, Col, Label, Image } from 'react-bootstrap';
 import style from '../../../styles.css.js';
 
 var TourRoomsModal = (props) => {
