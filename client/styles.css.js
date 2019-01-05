@@ -18,7 +18,7 @@ const buttonShowStyle = {
   'left': '0',
   'marginLeft': '33%',
   'marginTop': '10%',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'background': 'none',
   'border': 'none'
 };
@@ -39,7 +39,7 @@ const splashStyle = {
   'border': 'none',
   'marginLeft': '33%',
   'marginTop': '10%',
-  'ZIndex': '-1',
+  'ZIndex': '0',
 };
 
 const splashImageStyle = {
@@ -79,7 +79,7 @@ const splashButtonAreaStyle = {
   'height': '686px',
   'maxHeight': '686px',
   'position': 'static',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'border': 'none',
   'background': 'none',
   'border': 'none',
@@ -94,7 +94,7 @@ const titleStyle = {
   'fontSize': '30px',
   'textRendering': 'optimizelegibility',
   'marginLeft': '0.4%',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'display': 'block',
   'marginBottom': '6%',
   'font': '800 28px system-ui',
@@ -107,13 +107,13 @@ const listTableStyle = {
   'position': 'absolute',
   'display': 'flex',
   'height': 'auto',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'font': '400 14px system-ui'
 };
 
 const staticGalleryStyle = {
   'position': 'absolute',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'align': 'center',
   'marginLeft': '19.71%',
   'marginTop': '50%',
@@ -131,7 +131,7 @@ const listImageStyle = {
   'position': 'relative',
   'marginLeft': '5px',
   'marginRight': '5px',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'borderRadius': '5px',
   'cursor': 'crosshair'
 };
@@ -141,7 +141,7 @@ const roomLabelStyle = {
   'textRendering': 'optimizelegibility',
   'marginLeft': '4px',
   'marginBottom': '10%',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'color': '#484848',
   'font': '600 16px system-ui',
   'cursor': 'default'
@@ -309,7 +309,7 @@ const tourRoomsModalContentStyle = {
   'maxWidth': '67%',
   'height': '550px',
   'maxHeight': '750px',
-  'cursor': 'ns-resize'
+  'cursor': 'crosshair'
 };
 
 const tourRoomsModalImageStyle = {
@@ -359,7 +359,7 @@ const exploreButtonStyle = {
   'textAlign': 'left',
   'borderRadius': '4px',
   'background': 'none',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'border': 'none',
   'cursor': 'pointer',
   'textDecoration': 'none',
@@ -373,11 +373,12 @@ const exploreButtonAreaStyle = {
   'left': '0',
   'width': '11%',
   'height': '5%',
+  'ZIndex': '0',
   'marginLeft': '19.71%',
   'marginTop': '126.8%',
   'borderRadius': '4px',
   'background': 'none',
-  'ZIndex': '-1',
+  'ZIndex': '0',
   'border': 'none',
 };
 

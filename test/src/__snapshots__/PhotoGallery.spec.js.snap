@@ -7,12 +7,14 @@ exports[`ImageList should render correctly with data 1`] = `
     Object {
       "ZIndex": "-1",
       "align": "center",
+      "borderTop": "1px solid lightGrey",
       "height": "auto",
       "marginBottom": "30%",
-      "marginLeft": "18.71%",
+      "marginLeft": "19.71%",
       "marginTop": "50%",
+      "paddingTop": "2%",
       "position": "absolute",
-      "width": "65%",
+      "width": "61%",
     }
   }
 >
@@ -23,14 +25,15 @@ exports[`ImageList should render correctly with data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
-          "color": "grey",
+          "color": "#484848",
+          "cursor": "default",
           "display": "block",
-          "font": "400 32px system-ui",
+          "font": "800 28px system-ui",
           "fontSize": "30px",
-          "marginBottom": "2%",
-          "marginLeft": "2%",
-          "marginTop": "2%",
+          "marginBottom": "6%",
+          "marginLeft": "0.4%",
           "position": "relative",
+          "textRendering": "optimizelegibility",
         }
       }
     >
@@ -234,12 +237,14 @@ exports[`ImageList should render correctly without data 1`] = `
     Object {
       "ZIndex": "-1",
       "align": "center",
+      "borderTop": "1px solid lightGrey",
       "height": "auto",
       "marginBottom": "30%",
-      "marginLeft": "18.71%",
+      "marginLeft": "19.71%",
       "marginTop": "50%",
+      "paddingTop": "2%",
       "position": "absolute",
-      "width": "65%",
+      "width": "61%",
     }
   }
 >
@@ -250,14 +255,15 @@ exports[`ImageList should render correctly without data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
-          "color": "grey",
+          "color": "#484848",
+          "cursor": "default",
           "display": "block",
-          "font": "400 32px system-ui",
+          "font": "800 28px system-ui",
           "fontSize": "30px",
-          "marginBottom": "2%",
-          "marginLeft": "2%",
-          "marginTop": "2%",
+          "marginBottom": "6%",
+          "marginLeft": "0.4%",
           "position": "relative",
+          "textRendering": "optimizelegibility",
         }
       }
     >
@@ -354,10 +360,12 @@ exports[`ImageListEntry should render correctly with data 1`] = `
     className="tour_image"
   >
     <img
+      href="#Bedroom 1"
       style={
         Object {
           "ZIndex": "-1",
           "borderRadius": "5px",
+          "cursor": "crosshair",
           "height": "164px",
           "marginLeft": "5px",
           "marginRight": "5px",
@@ -371,11 +379,13 @@ exports[`ImageListEntry should render correctly with data 1`] = `
       style={
         Object {
           "ZIndex": "-1",
-          "color": "grey",
-          "font": "400 16px system-ui",
+          "color": "#484848",
+          "cursor": "default",
+          "font": "600 16px system-ui",
           "marginBottom": "10%",
           "marginLeft": "4px",
           "position": "relative",
+          "textRendering": "optimizelegibility",
         }
       }
     >
@@ -466,36 +476,40 @@ exports[`PhotoModal should render correctly with data 1`] = `
           "ZIndex": "-1",
           "background": "none",
           "border": "none",
+          "cursor": "crosshair",
           "display": "block",
           "height": "686px",
           "marginLeft": "33%",
           "marginTop": "10%",
           "maxHeight": "686px",
-          "maxWidth": "1082.66px",
-          "position": "relative",
-          "width": "1082.66px",
+          "maxWidth": "1092.66px",
+          "outline": "none",
+          "position": "static",
+          "width": "1083.66px",
         }
       }
     />
+     
     <div
       onClick={[Function]}
       style={
         Object {
           "ZIndex": "-2",
           "background": "lightGrey",
-          "border": "2px solid lightGrey",
           "borderRadius": "4px",
-          "color": "grey",
+          "color": "#484848",
+          "cursor": "pointer",
           "display": "block",
           "float": "right",
-          "font": "400 14px system-ui",
+          "font": "800 14px system-ui",
           "height": "4%",
           "left": "0",
-          "marginLeft": "87.4%",
-          "marginTop": "38.6%",
+          "marginLeft": "86.4%",
+          "marginTop": "37.6%",
           "paddingTop": "0.6%",
           "position": "absolute",
           "textAlign": "center",
+          "textRendering": "optimizelegibility",
           "top": "0",
           "width": "10%",
         }
@@ -517,6 +531,8 @@ exports[`PhotoModal should render correctly with data 1`] = `
       bsStyle="primary"
       disabled={false}
       onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
       style={
         Object {
           "ZIndex": "-1",
@@ -524,18 +540,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
           "border": "none",
           "borderRadius": "4px",
           "color": "#a61d55",
+          "cursor": "pointer",
           "display": "block",
           "float": "left",
-          "font": "400 14px system-ui",
+          "font": "500 18px system-ui",
           "height": "5%",
           "left": "0",
           "marginBottom": "3%",
-          "marginLeft": "18.21%",
-          "marginTop": "124.8%",
+          "marginLeft": "19.71%",
+          "marginTop": "126.8%",
+          "outline": "none",
           "position": "absolute",
-          "textAlign": "center",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textRendering": "optimizelegibility",
           "top": "0",
-          "width": "10%",
+          "width": "12%",
         }
       }
     >
@@ -552,7 +572,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
     bsClass="modal"
     container={
       PhotoModal {
+        "buttonRef": Object {
+          "current": null,
+        },
         "context": Object {},
+        "handleImageOpen": [Function],
         "handleTourOpen": [Function],
         "handleViewOpen": [Function],
         "props": Object {
@@ -589,36 +613,37 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "ZIndex": "1",
             "background": "none",
             "borderColor": "white",
-            "display": "flex",
-            "flexDirection": "column",
+            "display": "grid",
             "float": "left",
-            "font": "400 16px system-ui",
-            "height": "auto",
+            "height": "0%",
             "left": "0",
-            "maxWidth": "40%",
-            "minHeight": "100%",
-            "overflow": "scroll",
-            "paddingBottom": "10%",
-            "paddingLeft": "20.71%",
-            "paddingTop": "7%",
+            "marginTop": "2.5%",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
             "position": "static",
+            "scrollBehavior": "smooth",
+            "textRendering": "optimizelegibility",
             "top": "0",
-            "width": "40%",
+            "width": "100%",
           },
           "displayViewStyle": Object {
             "ZIndex": "1",
+            "animation": "slideUp .5s linear",
             "background": "none",
-            "borderColor": "white",
-            "display": "grid",
+            "display": "flex",
+            "flexDirection": "column",
             "float": "left",
-            "height": "100%",
+            "height": "80%",
             "left": "0",
-            "marginTop": "1%",
-            "maxWidth": "100%",
+            "maxWidth": "80%",
             "minHeight": "100%",
+            "overflow": "scroll",
+            "paddingBottom": "2%",
+            "paddingTop": "1%",
             "position": "static",
+            "textRendering": "optimizelegibility",
             "top": "0",
-            "width": "100%",
+            "width": "80%",
           },
           "exploreButtonAreaStyle": Object {
             "ZIndex": "-1",
@@ -628,11 +653,11 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "display": "block",
             "height": "5%",
             "left": "0",
-            "marginLeft": "18.21%",
-            "marginTop": "124.8%",
+            "marginLeft": "19.71%",
+            "marginTop": "126.8%",
             "position": "absolute",
             "top": "0",
-            "width": "10%",
+            "width": "11%",
           },
           "exploreButtonStyle": Object {
             "ZIndex": "-1",
@@ -640,49 +665,57 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "border": "none",
             "borderRadius": "4px",
             "color": "#a61d55",
+            "cursor": "pointer",
             "display": "block",
             "float": "left",
-            "font": "400 14px system-ui",
+            "font": "500 18px system-ui",
             "height": "5%",
             "left": "0",
             "marginBottom": "3%",
-            "marginLeft": "18.21%",
-            "marginTop": "124.8%",
+            "marginLeft": "19.71%",
+            "marginTop": "126.8%",
+            "outline": "none",
             "position": "absolute",
-            "textAlign": "center",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textRendering": "optimizelegibility",
             "top": "0",
-            "width": "10%",
+            "width": "12%",
           },
+          "open": false,
           "show": false,
           "splashButtonAreaStyle": Object {
             "ZIndex": "-1",
             "background": "none",
             "border": "none",
+            "cursor": "crosshair",
             "display": "block",
             "height": "686px",
             "marginLeft": "33%",
             "marginTop": "10%",
             "maxHeight": "686px",
-            "maxWidth": "1082.66px",
-            "position": "relative",
-            "width": "1082.66px",
+            "maxWidth": "1092.66px",
+            "outline": "none",
+            "position": "static",
+            "width": "1083.66px",
           },
           "splashButtonStyle": Object {
             "ZIndex": "-2",
             "background": "lightGrey",
-            "border": "2px solid lightGrey",
             "borderRadius": "4px",
-            "color": "grey",
+            "color": "#484848",
+            "cursor": "pointer",
             "display": "block",
             "float": "right",
-            "font": "400 14px system-ui",
+            "font": "800 14px system-ui",
             "height": "4%",
             "left": "0",
-            "marginLeft": "87.4%",
-            "marginTop": "38.6%",
+            "marginLeft": "86.4%",
+            "marginTop": "37.6%",
             "paddingTop": "0.6%",
             "position": "absolute",
             "textAlign": "center",
+            "textRendering": "optimizelegibility",
             "top": "0",
             "width": "10%",
           },
@@ -743,36 +776,40 @@ exports[`PhotoModal should render correctly with data 1`] = `
                       "ZIndex": "-1",
                       "background": "none",
                       "border": "none",
+                      "cursor": "crosshair",
                       "display": "block",
                       "height": "686px",
                       "marginLeft": "33%",
                       "marginTop": "10%",
                       "maxHeight": "686px",
-                      "maxWidth": "1082.66px",
-                      "position": "relative",
-                      "width": "1082.66px",
+                      "maxWidth": "1092.66px",
+                      "outline": "none",
+                      "position": "static",
+                      "width": "1083.66px",
                     }
                   }
                 />
+                 
                 <div
                   onClick={[Function]}
                   style={
                     Object {
                       "ZIndex": "-2",
                       "background": "lightGrey",
-                      "border": "2px solid lightGrey",
                       "borderRadius": "4px",
-                      "color": "grey",
+                      "color": "#484848",
+                      "cursor": "pointer",
                       "display": "block",
                       "float": "right",
-                      "font": "400 14px system-ui",
+                      "font": "800 14px system-ui",
                       "height": "4%",
                       "left": "0",
-                      "marginLeft": "87.4%",
-                      "marginTop": "38.6%",
+                      "marginLeft": "86.4%",
+                      "marginTop": "37.6%",
                       "paddingTop": "0.6%",
                       "position": "absolute",
                       "textAlign": "center",
+                      "textRendering": "optimizelegibility",
                       "top": "0",
                       "width": "10%",
                     }
@@ -794,6 +831,8 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   bsStyle="primary"
                   disabled={false}
                   onClick={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
                   style={
                     Object {
                       "ZIndex": "-1",
@@ -801,18 +840,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
                       "border": "none",
                       "borderRadius": "4px",
                       "color": "#a61d55",
+                      "cursor": "pointer",
                       "display": "block",
                       "float": "left",
-                      "font": "400 14px system-ui",
+                      "font": "500 18px system-ui",
                       "height": "5%",
                       "left": "0",
                       "marginBottom": "3%",
-                      "marginLeft": "18.21%",
-                      "marginTop": "124.8%",
+                      "marginLeft": "19.71%",
+                      "marginTop": "126.8%",
+                      "outline": "none",
                       "position": "absolute",
-                      "textAlign": "center",
+                      "textAlign": "left",
+                      "textDecoration": "none",
+                      "textRendering": "optimizelegibility",
                       "top": "0",
-                      "width": "10%",
+                      "width": "12%",
                     }
                   }
                 >
@@ -854,12 +897,14 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     "borderColor": "white",
                     "display": "grid",
                     "float": "left",
-                    "height": "100%",
+                    "height": "0%",
                     "left": "0",
-                    "marginTop": "1%",
+                    "marginTop": "2.5%",
+                    "maxHeight": "100%",
                     "maxWidth": "100%",
-                    "minHeight": "100%",
                     "position": "static",
+                    "scrollBehavior": "smooth",
+                    "textRendering": "optimizelegibility",
                     "top": "0",
                     "width": "100%",
                   }
@@ -871,12 +916,14 @@ exports[`PhotoModal should render correctly with data 1`] = `
                   closeLabel="Close"
                   style={
                     Object {
-                      "ZIndex": "2",
+                      "ZIndex": "1",
                       "backgroundColor": "white",
                       "borderBottom": "1px solid lightGrey",
                       "height": "70px",
                       "left": "0",
+                      "marginBottom": "1%",
                       "position": "fixed",
+                      "textRendering": "optimizelegibility",
                       "top": "0",
                       "width": "100%",
                     }
@@ -900,6 +947,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                             "background": "none",
                             "border": "none",
                             "color": "grey",
+                            "cursor": "pointer",
                             "display": "flex",
                             "float": "left",
                             "fontSize": "36px",
@@ -907,7 +955,9 @@ exports[`PhotoModal should render correctly with data 1`] = `
                             "left": "0",
                             "marginLeft": "2%",
                             "marginTop": "15px",
+                            "outline": "none",
                             "position": "fixed",
+                            "textRendering": "optimizelegibility",
                             "top": "0",
                             "width": "40px",
                           }
@@ -917,6 +967,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                           class="fas fa-arrow-circle-left"
                         />
                       </Button>
+                       
                       <Button
                         active={false}
                         block={false}
@@ -928,13 +979,16 @@ exports[`PhotoModal should render correctly with data 1`] = `
                           Object {
                             "border": "2px solid lightGrey",
                             "borderRadius": "4px",
+                            "color": "#484848",
+                            "cursor": "pointer",
                             "display": "inline-block",
                             "float": "left",
-                            "font": "400 14px system-ui",
+                            "font": "500 14px system-ui",
                             "height": "40px",
                             "left": "0",
-                            "marginLeft": "20.90%",
+                            "marginLeft": "18.5%",
                             "marginTop": "15px",
+                            "outline": "none",
                             "position": "fixed",
                             "top": "0",
                             "width": "10%",
@@ -955,18 +1009,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
                     style={
                       Object {
                         "ZIndex": "1",
+                        "animation": "slideUp .5s linear",
                         "background": "none",
-                        "borderColor": "white",
-                        "display": "grid",
+                        "display": "flex",
+                        "flexDirection": "column",
                         "float": "left",
-                        "height": "100%",
+                        "height": "80%",
                         "left": "0",
-                        "marginTop": "1%",
-                        "maxWidth": "100%",
+                        "maxWidth": "80%",
                         "minHeight": "100%",
+                        "overflow": "scroll",
+                        "paddingBottom": "2%",
+                        "paddingTop": "1%",
                         "position": "static",
+                        "textRendering": "optimizelegibility",
                         "top": "0",
-                        "width": "100%",
+                        "width": "80%",
                       }
                     }
                   >
@@ -975,18 +1033,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
                       displayStyle={
                         Object {
                           "ZIndex": "1",
+                          "animation": "slideUp .5s linear",
                           "background": "none",
-                          "borderColor": "white",
-                          "display": "grid",
+                          "display": "flex",
+                          "flexDirection": "column",
                           "float": "left",
-                          "height": "100%",
+                          "height": "80%",
                           "left": "0",
-                          "marginTop": "1%",
-                          "maxWidth": "100%",
+                          "maxWidth": "80%",
                           "minHeight": "100%",
+                          "overflow": "scroll",
+                          "paddingBottom": "2%",
+                          "paddingTop": "1%",
                           "position": "static",
+                          "textRendering": "optimizelegibility",
                           "top": "0",
-                          "width": "100%",
+                          "width": "80%",
                         }
                       }
                       imageUrls={
@@ -1017,21 +1079,18 @@ exports[`PhotoModal should render correctly with data 1`] = `
                         "ZIndex": "1",
                         "background": "none",
                         "borderColor": "white",
-                        "display": "flex",
-                        "flexDirection": "column",
+                        "display": "grid",
                         "float": "left",
-                        "font": "400 16px system-ui",
-                        "height": "auto",
+                        "height": "0%",
                         "left": "0",
-                        "maxWidth": "40%",
-                        "minHeight": "100%",
-                        "overflow": "scroll",
-                        "paddingBottom": "10%",
-                        "paddingLeft": "20.71%",
-                        "paddingTop": "7%",
+                        "marginTop": "2.5%",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
                         "position": "static",
+                        "scrollBehavior": "smooth",
+                        "textRendering": "optimizelegibility",
                         "top": "0",
-                        "width": "40%",
+                        "width": "100%",
                       }
                     }
                   >
@@ -1041,23 +1100,21 @@ exports[`PhotoModal should render correctly with data 1`] = `
                           "ZIndex": "1",
                           "background": "none",
                           "borderColor": "white",
-                          "display": "flex",
-                          "flexDirection": "column",
+                          "display": "grid",
                           "float": "left",
-                          "font": "400 16px system-ui",
-                          "height": "auto",
+                          "height": "0%",
                           "left": "0",
-                          "maxWidth": "40%",
-                          "minHeight": "100%",
-                          "overflow": "scroll",
-                          "paddingBottom": "10%",
-                          "paddingLeft": "20.71%",
-                          "paddingTop": "7%",
+                          "marginTop": "2.5%",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
                           "position": "static",
+                          "scrollBehavior": "smooth",
+                          "textRendering": "optimizelegibility",
                           "top": "0",
-                          "width": "40%",
+                          "width": "100%",
                         }
                       }
+                      handleImageOpen={[Function]}
                       imageUrls={
                         Array [
                           "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -1115,12 +1172,14 @@ exports[`PhotoModal should render correctly with data 1`] = `
         "borderColor": "white",
         "display": "grid",
         "float": "left",
-        "height": "100%",
+        "height": "0%",
         "left": "0",
-        "marginTop": "1%",
+        "marginTop": "2.5%",
+        "maxHeight": "100%",
         "maxWidth": "100%",
-        "minHeight": "100%",
         "position": "static",
+        "scrollBehavior": "smooth",
+        "textRendering": "optimizelegibility",
         "top": "0",
         "width": "100%",
       }
@@ -1132,12 +1191,14 @@ exports[`PhotoModal should render correctly with data 1`] = `
       closeLabel="Close"
       style={
         Object {
-          "ZIndex": "2",
+          "ZIndex": "1",
           "backgroundColor": "white",
           "borderBottom": "1px solid lightGrey",
           "height": "70px",
           "left": "0",
+          "marginBottom": "1%",
           "position": "fixed",
+          "textRendering": "optimizelegibility",
           "top": "0",
           "width": "100%",
         }
@@ -1161,6 +1222,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
                 "background": "none",
                 "border": "none",
                 "color": "grey",
+                "cursor": "pointer",
                 "display": "flex",
                 "float": "left",
                 "fontSize": "36px",
@@ -1168,7 +1230,9 @@ exports[`PhotoModal should render correctly with data 1`] = `
                 "left": "0",
                 "marginLeft": "2%",
                 "marginTop": "15px",
+                "outline": "none",
                 "position": "fixed",
+                "textRendering": "optimizelegibility",
                 "top": "0",
                 "width": "40px",
               }
@@ -1178,6 +1242,7 @@ exports[`PhotoModal should render correctly with data 1`] = `
               class="fas fa-arrow-circle-left"
             />
           </Button>
+           
           <Button
             active={false}
             block={false}
@@ -1189,13 +1254,16 @@ exports[`PhotoModal should render correctly with data 1`] = `
               Object {
                 "border": "2px solid lightGrey",
                 "borderRadius": "4px",
+                "color": "#484848",
+                "cursor": "pointer",
                 "display": "inline-block",
                 "float": "left",
-                "font": "400 14px system-ui",
+                "font": "500 14px system-ui",
                 "height": "40px",
                 "left": "0",
-                "marginLeft": "20.90%",
+                "marginLeft": "18.5%",
                 "marginTop": "15px",
+                "outline": "none",
                 "position": "fixed",
                 "top": "0",
                 "width": "10%",
@@ -1214,18 +1282,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
         style={
           Object {
             "ZIndex": "1",
+            "animation": "slideUp .5s linear",
             "background": "none",
-            "borderColor": "white",
-            "display": "grid",
+            "display": "flex",
+            "flexDirection": "column",
             "float": "left",
-            "height": "100%",
+            "height": "80%",
             "left": "0",
-            "marginTop": "1%",
-            "maxWidth": "100%",
+            "maxWidth": "80%",
             "minHeight": "100%",
+            "overflow": "scroll",
+            "paddingBottom": "2%",
+            "paddingTop": "1%",
             "position": "static",
+            "textRendering": "optimizelegibility",
             "top": "0",
-            "width": "100%",
+            "width": "80%",
           }
         }
       >
@@ -1234,18 +1306,22 @@ exports[`PhotoModal should render correctly with data 1`] = `
           displayStyle={
             Object {
               "ZIndex": "1",
+              "animation": "slideUp .5s linear",
               "background": "none",
-              "borderColor": "white",
-              "display": "grid",
+              "display": "flex",
+              "flexDirection": "column",
               "float": "left",
-              "height": "100%",
+              "height": "80%",
               "left": "0",
-              "marginTop": "1%",
-              "maxWidth": "100%",
+              "maxWidth": "80%",
               "minHeight": "100%",
+              "overflow": "scroll",
+              "paddingBottom": "2%",
+              "paddingTop": "1%",
               "position": "static",
+              "textRendering": "optimizelegibility",
               "top": "0",
-              "width": "100%",
+              "width": "80%",
             }
           }
           imageUrls={
@@ -1276,21 +1352,18 @@ exports[`PhotoModal should render correctly with data 1`] = `
             "ZIndex": "1",
             "background": "none",
             "borderColor": "white",
-            "display": "flex",
-            "flexDirection": "column",
+            "display": "grid",
             "float": "left",
-            "font": "400 16px system-ui",
-            "height": "auto",
+            "height": "0%",
             "left": "0",
-            "maxWidth": "40%",
-            "minHeight": "100%",
-            "overflow": "scroll",
-            "paddingBottom": "10%",
-            "paddingLeft": "20.71%",
-            "paddingTop": "7%",
+            "marginTop": "2.5%",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
             "position": "static",
+            "scrollBehavior": "smooth",
+            "textRendering": "optimizelegibility",
             "top": "0",
-            "width": "40%",
+            "width": "100%",
           }
         }
       >
@@ -1300,23 +1373,21 @@ exports[`PhotoModal should render correctly with data 1`] = `
               "ZIndex": "1",
               "background": "none",
               "borderColor": "white",
-              "display": "flex",
-              "flexDirection": "column",
+              "display": "grid",
               "float": "left",
-              "font": "400 16px system-ui",
-              "height": "auto",
+              "height": "0%",
               "left": "0",
-              "maxWidth": "40%",
-              "minHeight": "100%",
-              "overflow": "scroll",
-              "paddingBottom": "10%",
-              "paddingLeft": "20.71%",
-              "paddingTop": "7%",
+              "marginTop": "2.5%",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
               "position": "static",
+              "scrollBehavior": "smooth",
+              "textRendering": "optimizelegibility",
               "top": "0",
-              "width": "40%",
+              "width": "100%",
             }
           }
+          handleImageOpen={[Function]}
           imageUrls={
             Array [
               "https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg",
@@ -1373,17 +1444,21 @@ Array [
     <Label
       bsClass="label"
       bsStyle="default"
+      id="Bedroom 1"
       style={
         Object {
           "ZIndex": "1",
-          "color": "grey",
+          "borderBottom": "1px solid lightGrey",
+          "color": "#484848",
+          "cursor": "default",
           "display": "block",
           "float": "left",
-          "font": "400 36px system-ui",
+          "font": "600 36px system-ui",
           "marginLeft": "18%",
-          "marginTop": "4%",
+          "marginTop": "2%",
           "position": "static",
-          "width": "80%",
+          "textRendering": "optimizelegibility",
+          "width": "64.35%",
         }
       }
     >
@@ -1395,7 +1470,7 @@ Array [
       style={
         Object {
           "ZIndex": "1",
-          "borderRadius": "10px",
+          "cursor": "crosshair",
           "display": "flex",
           "flex": "1 1 auto",
           "flexDirection": "row",
@@ -1413,6 +1488,8 @@ Array [
           "paddingBottom": "1.5%",
           "paddingLeft": "2%",
           "position": "static",
+          "scrollBehavior": "smooth",
+          "scrollbarColor": "#484848",
           "top": "0",
           "width": "67%",
         }
@@ -1425,21 +1502,30 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_1.jpg"
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1450,21 +1536,30 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_1_2.jpg"
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1475,21 +1570,30 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             src="https://s3-us-west-1.amazonaws.com/fec-room-images/images/bedroom_2_4.jpg"
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1503,17 +1607,21 @@ Array [
     <Label
       bsClass="label"
       bsStyle="default"
+      id="Bedroom 2"
       style={
         Object {
           "ZIndex": "1",
-          "color": "grey",
+          "borderBottom": "1px solid lightGrey",
+          "color": "#484848",
+          "cursor": "default",
           "display": "block",
           "float": "left",
-          "font": "400 36px system-ui",
+          "font": "600 36px system-ui",
           "marginLeft": "18%",
-          "marginTop": "4%",
+          "marginTop": "2%",
           "position": "static",
-          "width": "80%",
+          "textRendering": "optimizelegibility",
+          "width": "64.35%",
         }
       }
     >
@@ -1525,7 +1633,7 @@ Array [
       style={
         Object {
           "ZIndex": "1",
-          "borderRadius": "10px",
+          "cursor": "crosshair",
           "display": "flex",
           "flex": "1 1 auto",
           "flexDirection": "row",
@@ -1543,6 +1651,8 @@ Array [
           "paddingBottom": "1.5%",
           "paddingLeft": "2%",
           "position": "static",
+          "scrollBehavior": "smooth",
+          "scrollbarColor": "#484848",
           "top": "0",
           "width": "67%",
         }
@@ -1555,20 +1665,29 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1579,20 +1698,29 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1603,20 +1731,29 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1627,20 +1764,29 @@ Array [
         xs={6}
       >
         <div>
-          <img
+          <Image
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={true}
+            rounded={false}
             style={
               Object {
                 "ZIndex": "1",
                 "borderRadius": "5px",
-                "display": "block",
+                "cursor": "pointer",
+                "display": "flex",
                 "float": "left",
-                "height": "350px",
+                "height": "auto",
                 "marginRight": "20px",
                 "marginTop": "5%",
+                "maxHeight": "540px",
+                "maxWidth": "800px",
                 "position": "static",
                 "width": "525px",
               }
             }
+            thumbnail={false}
           />
         </div>
       </Row>
@@ -1664,16 +1810,17 @@ Array [
           "ZIndex": "1",
           "backgroundColor": "white",
           "borderColor": "white",
-          "color": "grey",
+          "color": "#484848",
           "display": "flex",
           "flexWrap": "column wrap",
           "float": "left",
-          "font": "400 16px system-ui",
+          "font": "400 18px system-ui",
           "height": "auto",
           "left": "0",
+          "marginLeft": "22.8%",
+          "marginTop": "4%",
           "maxWidth": "100%",
           "minHeight": "100%",
-          "paddingTop": "4%",
           "position": "static",
           "top": "0",
           "width": "100%",
@@ -1692,6 +1839,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1716,6 +1864,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1740,6 +1889,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1756,6 +1906,27 @@ Array [
     <Label
       bsClass="label"
       bsStyle="default"
+      style={
+        Object {
+          "ZIndex": "1",
+          "borderBottom": "1px solid lightGrey",
+          "color": "#484848",
+          "cursor": "default",
+          "display": "inline-block",
+          "float": "left",
+          "font": "500 20px system-ui",
+          "height": "auto",
+          "left": "0",
+          "marginLeft": "22.8%",
+          "maxWidth": "60%",
+          "minHeight": "100%",
+          "paddingBottom": "0.2%",
+          "position": "static",
+          "textRendering": "optimizelegibility",
+          "top": "0",
+          "width": "60%",
+        }
+      }
     >
       <span>
          
@@ -1777,16 +1948,17 @@ Array [
           "ZIndex": "1",
           "backgroundColor": "white",
           "borderColor": "white",
-          "color": "grey",
+          "color": "#484848",
           "display": "flex",
           "flexWrap": "column wrap",
           "float": "left",
-          "font": "400 16px system-ui",
+          "font": "400 18px system-ui",
           "height": "auto",
           "left": "0",
+          "marginLeft": "22.8%",
+          "marginTop": "4%",
           "maxWidth": "100%",
           "minHeight": "100%",
-          "paddingTop": "4%",
           "position": "static",
           "top": "0",
           "width": "100%",
@@ -1804,6 +1976,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1827,6 +2000,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1850,6 +2024,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1873,6 +2048,7 @@ Array [
             style={
               Object {
                 "borderRadius": "10px",
+                "cursor": "crosshair",
                 "display": "block",
                 "float": "left",
                 "height": "101px",
@@ -1889,6 +2065,27 @@ Array [
     <Label
       bsClass="label"
       bsStyle="default"
+      style={
+        Object {
+          "ZIndex": "1",
+          "borderBottom": "1px solid lightGrey",
+          "color": "#484848",
+          "cursor": "default",
+          "display": "inline-block",
+          "float": "left",
+          "font": "500 20px system-ui",
+          "height": "auto",
+          "left": "0",
+          "marginLeft": "22.8%",
+          "maxWidth": "60%",
+          "minHeight": "100%",
+          "paddingBottom": "0.2%",
+          "position": "static",
+          "textRendering": "optimizelegibility",
+          "top": "0",
+          "width": "60%",
+        }
+      }
     >
       <span>
          
