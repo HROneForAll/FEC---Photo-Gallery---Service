@@ -8,16 +8,16 @@ const staticStyle = {
 
 const buttonShowStyle = {
   'display': 'block',
-  'width': '1082.66px',
+  'width': '75%',
   'textRendering': 'optimizelegibility',
-  'maxWidth': '1082.66px',
-  'height': '686px',
-  'maxHeight': '686px',
-  'position': 'absolute',
+  'maxWidth': '75%',
+  'height': '35%',
+  'maxHeight': '35%',
+  'position': 'relative',
   'top': '0',
   'left': '0',
-  'marginLeft': '33%',
-  'marginTop': '10%',
+  'marginLeft': '36%',
+  'marginTop': '2%',
   'ZIndex': '0',
   'background': 'none',
   'border': 'none'
@@ -29,24 +29,24 @@ const buttonHideStyle = {
 
 const splashStyle = {
   'display': 'block',
-  'width': '1082.66px',
-  'maxWidth': '1082.66px',
-  'height': '686px',
-  'maxHeight': '686px',
-  'position': 'absolute',
+  'width': '65%',
+  'maxWidth': '65%',
+  'height': 'auto',
+  'maxHeight': '65%',
+  'position': 'static',
   'top': '0',
   'left': '0',
   'border': 'none',
-  'marginLeft': '33%',
-  'marginTop': '10%',
+  'marginLeft': '36%',
+  'marginTop': '11%',
   'ZIndex': '0',
 };
 
 const splashImageStyle = {
-  'width': '1082.66px',
-  'maxWidth': '1082.66px',
-  'height': '686px',
-  'maxHeight': '686px',
+  'width': '85%',
+  'maxWidth': '85%',
+  'height': 'auto',
+  // 'maxHeight': '35%',
   'borderRadius': '5px',
 };
 
@@ -57,14 +57,14 @@ const splashButtonStyle = {
   'left': '0',
   'textRendering': 'optimizelegibility',
   'width': '10%',
-  'height': '4%',
-  'paddingTop': '0.6%',
+  'height': '3.4%',
+  'paddingTop': '0.7%',
   'font': '800 14px system-ui',
   'color': '#484848',
-  'float': 'right',
-  'marginLeft': '86.4%',
+  'float': 'left',
+  'marginLeft': '80%',
   'ZIndex': '-2',
-  'marginTop': '37.6%',
+  'marginTop': '45%',
   'textAlign': 'center',
   'borderRadius': '4px',
   'background': 'lightGrey',
@@ -73,20 +73,20 @@ const splashButtonStyle = {
 
 const splashButtonAreaStyle = {
   'background': 'none',
-  'display': 'block',
-  'width': '1083.66px',
-  'maxWidth': '1092.66px',
-  'height': '686px',
-  'maxHeight': '686px',
-  'position': 'static',
-  'ZIndex': '0',
-  'border': 'none',
+  'cursor': 'crosshair',
   'background': 'none',
+  'position': 'absolute',
+  'display': 'block',
+  'width': '55.2%',
+  'maxWidth': '55.2%',
+  'height': '64%',
+  'maxHeight': '64%',
+  'top': '0',
+  'left': '0',
   'border': 'none',
-  'marginLeft': '33%',
-  'marginTop': '10%',
-  'outline': 'none',
-  'cursor': 'crosshair'
+  'marginLeft': '36%',
+  'marginTop': '12%',
+  'ZIndex': '400',
 };
 
 const titleStyle = {
@@ -104,7 +104,7 @@ const titleStyle = {
 
 const listTableStyle = {
   'display': 'grid',
-  'position': 'absolute',
+  'position': 'relative',
   'display': 'flex',
   'height': 'auto',
   'ZIndex': '0',
@@ -112,13 +112,13 @@ const listTableStyle = {
 };
 
 const staticGalleryStyle = {
-  'position': 'absolute',
+  'position': 'relative',
   'ZIndex': '0',
   'align': 'center',
   'marginLeft': '19.71%',
-  'marginTop': '50%',
-  'marginBottom': '30%',
+  'marginTop': '10%',
   'paddingTop': '2%',
+  'marginBottom': '6%',
   'borderTop': '1px solid lightGrey',
   'width': '61%',
   'height': 'auto',
@@ -156,12 +156,12 @@ const viewRoomsModalStyle = {
   'ZIndex': '1',
   'left': '0',
   'top': '0',
-  'overflow': 'scroll',
+  // 'overflow': 'scroll',
   'float': 'left',
   'width': '80%',
   'maxWidth': '80%',
-  'height': '80%',
-  'minHeight': '100%',
+  // 'height': '80%',
+  // 'minHeight': '100%',
   'paddingTop': '1%',
   'paddingBottom': '2%',
   'animation': 'slideUp .5s linear'
@@ -199,8 +199,8 @@ const viewRoomsModalRowStyle = {
   'top': '0',
   'borderColor': 'white',
   'float': 'left',
-  'width': '100%',
-  'maxWidth': '100%',
+  'width': '75%',
+  'maxWidth': '75%',
   'height': 'auto',
   'minHeight': '100%',
   'marginTop': '4%',
@@ -239,10 +239,11 @@ const viewRoomsModalImageStyle = {
 
 const modalNavStyle = {
   'position': 'fixed',
+  'display': 'block',
   'textRendering': 'optimizelegibility',
-  'backgroundColor': 'white',
+  'background': 'white',
   'width': '100%',
-  'ZIndex': '1',
+  'ZIndex': '500',
   'marginBottom': '1%',
   'borderBottom': '1px solid lightGrey',
   'height': '70px',
@@ -281,13 +282,14 @@ const tourRoomsModalStyle = {
   'float': 'left',
   'width': '100%',
   'maxWidth': '100%',
-  'height': '0%',
-  'maxHeight': '100%',
+  'height': '100%',
+  // 'maxHeight': '100%',
   'marginTop': '2.5%',
 };
 
 const tourRoomsModalContentStyle = {
-  'display': 'flex',
+  'display': 'block',
+  'position': 'static',
   'flex': '1 1 auto',
   'flexDirection': 'row',
   'overflow': 'scroll',
@@ -313,7 +315,7 @@ const tourRoomsModalContentStyle = {
 };
 
 const tourRoomsModalImageStyle = {
-  'display': 'flex',
+  'display': 'block',
   'width': '525px',
   'maxWidth': '800px',
   'height': 'auto',
@@ -352,10 +354,10 @@ const exploreButtonStyle = {
   'textRendering': 'optimizelegibility',
   'font': '500 18px system-ui',
   'color': '#a61d55',
-  'float': 'left',
+  // 'float': 'left',
   'marginBottom': '3%',
   'marginLeft': '19.71%',
-  'marginTop': '126.8%',
+  'marginTop': '133.8%',
   'textAlign': 'left',
   'borderRadius': '4px',
   'background': 'none',
@@ -367,7 +369,7 @@ const exploreButtonStyle = {
 };
 
 const exploreButtonAreaStyle = {
-  'position': 'absolute',
+  'position': 'relative',
   'display': 'block',
   'top': '0',
   'left': '0',
@@ -375,7 +377,7 @@ const exploreButtonAreaStyle = {
   'height': '5%',
   'ZIndex': '0',
   'marginLeft': '19.71%',
-  'marginTop': '126.8%',
+  'marginTop': '26.8%',
   'borderRadius': '4px',
   'background': 'none',
   'ZIndex': '0',

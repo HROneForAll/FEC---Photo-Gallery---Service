@@ -74,7 +74,7 @@ export default class PhotoModal extends React.Component {
       buttonStyle: style.staticNoStyle,
       splashButtonStyle: style.buttonHideStyle, 
       splashButtonAreaStyle: style.buttonHideStyle, 
-      exploreButtonStyle: style.staticNoStyle, 
+      // exploreButtonStyle: style.staticNoStyle, 
       exploreButtonAreaStyle: style.buttonHideStyle, 
       buttonContent:'Tour this home', 
       displayStyle: style.viewRoomsModalStyle,
@@ -117,7 +117,34 @@ export default class PhotoModal extends React.Component {
             ref={this.buttonRef}
             bsStyle="primary"
             bsSize="large"
-            onClick={() => this.handleViewOpen()}
+            onClick={() => {
+              this.setState({
+                exploreButtonStyle: {
+                  'position': 'absolute',
+                  'display': 'none',
+                  'top': '0',
+                  'left': '0',
+                  'width': '12%',
+                  'height': '5%',
+                  'textRendering': 'optimizelegibility',
+                  'font': '500 18px system-ui',
+                  'color': '#a61d55',
+                  // 'float': 'left',
+                  'marginBottom': '3%',
+                  'marginLeft': '19.71%',
+                  'marginTop': '133.8%',
+                  'textAlign': 'left',
+                  'borderRadius': '4px',
+                  'background': 'none',
+                  'ZIndex': '-1',
+                  'border': 'none',
+                  'cursor': 'pointer',
+                  'textDecoration': 'none',
+                  'outline': 'none'
+                }
+              });
+              this.handleViewOpen()
+            }}
             onMouseOver={() => {
               this.setState({
                 exploreButtonStyle: {
@@ -130,10 +157,10 @@ export default class PhotoModal extends React.Component {
                   'textRendering': 'optimizelegibility',
                   'font': '500 18px system-ui',
                   'color': '#a61d55',
-                  'float': 'left',
+                  // 'float': 'left',
                   'marginBottom': '3%',
                   'marginLeft': '19.71%',
-                  'marginTop': '126.8%',
+                  'marginTop': '133.8%',
                   'textAlign': 'left',
                   'borderRadius': '4px',
                   'background': 'none',
@@ -157,10 +184,10 @@ export default class PhotoModal extends React.Component {
                   'textRendering': 'optimizelegibility',
                   'font': '500 18px system-ui',
                   'color': '#a61d55',
-                  'float': 'left',
+                  // 'float': 'left',
                   'marginBottom': '3%',
                   'marginLeft': '19.71%',
-                  'marginTop': '126.8%',
+                  'marginTop': '133.8%',
                   'textAlign': 'left',
                   'borderRadius': '4px',
                   'background': 'none',

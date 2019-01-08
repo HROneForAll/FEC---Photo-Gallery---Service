@@ -20,7 +20,7 @@ var TourRoomsModal = (props) => {
       cols.push(
         <Row xs={6} md={3}>
           <div>
-            <Image onClick={() => props.handleImageOpen(url)} style={style.tourRoomsModalImageStyle} src={url} responsive/>
+            <Image onClick={() => props.handleImageOpen(url)} style={style.tourRoomsModalImageStyle} src={url}/>
           </div>
         </Row>
       )

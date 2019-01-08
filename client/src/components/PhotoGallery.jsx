@@ -45,6 +45,15 @@ export default class PhotoGallery extends React.Component {
   render() {
     return (
       <div>
+        <div className='photos_modal'>
+          <PhotoModal 
+          show={this.state.show}
+          displayStyle={this.state.displayStyle} 
+          handleClose={() => this.handleClose()} 
+          handleOpen={() => this.handleOpen()} 
+          rooms={this.state.rooms} 
+          imageUrls={this.state.imageUrls}/>
+        </div>
         <div style={this.state.displayStyle}>
           <div style={style.splashStyle} className='splash'>
             <Splash
@@ -57,7 +66,7 @@ export default class PhotoGallery extends React.Component {
             />
           </div>
         </div>
-        <div className='photos_modal'>
+        {/* <div className='photos_modal'>
           <PhotoModal 
           show={this.state.show}
           displayStyle={this.state.displayStyle} 
@@ -65,7 +74,7 @@ export default class PhotoGallery extends React.Component {
           handleOpen={() => this.handleOpen()} 
           rooms={this.state.rooms} 
           imageUrls={this.state.imageUrls}/>
-        </div>
+        </div> */}
       </div>
     )
   }
