@@ -11,12 +11,22 @@ app.use(morgan('short'));
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
+let photoGallerySeedCheck = false;
+
 app.get('/photos/:listingId', (req, res) => {
-  // console.log('req.params.id: ', req.params.listingId);
+  let seedCheck = photoGallerySeedCheck;
+  if (!seedCheck) {
+    photoGallerySeedCheck = true;
+    db.seed(req.params.listingId)
+      .then((cb) => {
+        cb();
+      })
+      .catch((err) => {
+        console.log('CAUGHT SEEDING IN GET:', err);
+      })
+  }
   db.getImageUrls(req.params.listingId)
     .then((results) => {
-      // console.log('req.params.id: ', req.params.listingId);
-      // console.log('GET RESULTS: ', results);
       res.status(200).send(results);
     })
     .catch((err) => {
@@ -28,6 +38,6 @@ app.get('/photos/:listingId', (req, res) => {
 
 const PORT = 1234;
 app.listen(PORT, () => {
-  console.log(`App is listening on port: ${PORT}`);
+  console.log(`Photo Gallery is listening on port: ${PORT}`);
 });
 

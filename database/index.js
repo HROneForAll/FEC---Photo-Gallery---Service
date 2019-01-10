@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/roomimages', {useNewUrlParser: true}, (err) => {
+mongoose.connect('mongodb://172.17.0.2/photo-gallery-db', {useNewUrlParser: true}, (err) => {
   if (err) {
     console.log('ERROR: ', err);
   } else {
-    console.log('mongo suucessss');
+    console.log('mongodb connected');
   }
 });
 
@@ -58,10 +58,17 @@ let seed = (id) => {
     currentRoomCount += 1;
     imageArr.push(`https://s3-us-west-1.amazonaws.com/fec-room-images/images/${currentRoom.name}${i}.jpg`);
   }
-  console.log('ImageArray: ', imageArr);
-  RoomImages.create({listingId: id, rooms: rooms, roomImages: imageArr});
+
+  return new Promise ((resolve, reject) => {
+    RoomImages.create({listingId: id, rooms: rooms, roomImages: imageArr}, (err, results) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(() => console.log('Database seeded'));
+      }
+    });
+  });
 };
-// seed('1');
 
 let getImageUrls = (id) => {
   return new Promise ((resolve, reject) => {
@@ -76,7 +83,8 @@ let getImageUrls = (id) => {
 };
 
 module.exports = {
-  getImageUrls
+  getImageUrls,
+  seed
 };
 
 
